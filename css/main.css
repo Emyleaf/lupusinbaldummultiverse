@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.section-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+}
+
+.dmglimit {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    color: red;
+}
+
+.titlegiant{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2em;
+}
+
+.section-number {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+    color: red;
+}
+.game-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.subtitlename {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    margin: 1em;
+}
+.text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+.sezionegioco {
+    background: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewY(-5deg);
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+.sezionecontent {
+    transform: skewY(5deg);
+    text-align: center;
+}
+
+.paragrafo{
+    margin: 3em;
+}
+
+.testo{
+    margin: 1em;
+    margin-bottom: 2em;
+}
+
+.info{
+    margin: auto;
+}
+
+.overlayimg{
+    opacity: 50%;
+    margin-bottom: 3em;
+}
+
+.footer{
+    margin-bottom: 3em;
+}
+
+.icon-background {
+    background-color: #f56565; /* Tailwind CSS color: bg-red-500 */
+    border: 2px solid #ffffff; /* Tailwind CSS color: border-white */
+    border-radius: 5px; /* Tailwind CSS class: rounded-full */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; /* Tailwind CSS class: w-12 */
+    height: 2rem; /* Tailwind CSS class: h-12 */
+    color: white; /* Text color */
+}
+
+
+.boxcard{
+    margin: 2.5em;
+}
+
+.overlayimgclass {
+    position: relative; /* Assicura che il contenitore sia posizionato relativamente */
+    display: inline-block; /* Per contenere l'immagine senza estenderla */
+    margin: 1em;
+  }
+  
+
+  .thick-icon {
+    font-size: 1em; /* Aumenta la dimensione dell'icona */
+    -webkit-text-stroke: 0.6px; 
+}

@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lupus in Baldum Multiverse</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+  
+  <div class="hero min-h-screen">
+    <div class="hero-content text-neutrale-content text-center">
+      <div class="max-w-md">
+        <h2 class="text-5xl font-bold titlegiant">Lupus in Baldum</h2>
+        <h1 class="text-5xl font-bold titlegiant">Multiverse</h1>
+        <p class="py-6 text-xl">
+        Dal celebre gioco Lupus in Baldum, è arrivato il gioco da tavolo ibrido al gioco di ruolo della celebre saga!</p>
+        <button class="btn" id="scrollToRulesButton2">INIZIA SUBBBITOH!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+    </svg>
+  </div>
+  
+
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="overlayimg">
+      <img src="./img/sfondo.png" alt="">
+    </div>
+  </div>
+
+  <div class="sezionegioco" id="rules">
+    <div class="sezionecont">
+      <div class="section-number">Sezione 1:</div>
+      <div class="section-title">MODALITÀ DI GIOCO</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center"><strong>Lupus in Baldum Multiverse</strong> è un gioco da tavolo ibrido a un gioco di ruolo che può essere giocato in due modalità: <strong>Scenario</strong> e <strong>Torneo</strong>.</p>
+  <div class="grid">
+    <div class="text-center">
+      <div class="subtitle">1.1 SCENARIO</div>
+      <p class="testo">Questa modalità combina le regole del combattimento uno contro uno con la narrazione, concentrandosi sulla storia piuttosto che sulla competizione. È assolutamente possibile perdere tutti i combattimenti e comunque creare e vivere una
+        una narrazione coinvolgente <em class="text-sky-300">(infatti, vincere tutti i combattimenti può portare a un bad ending del personaggio!)</em>.
+        
+        Questa modalità è pensata per un gruppo di <strong>4-6 giocatori</strong> e richiede circa <strong>3-4 ore</strong> di gioco. Più scenari possono essere collegati tra loro per giocare una storia più lunga, nota anche come <strong>Campagna</strong>.</p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">1.2 TORNEO</div>
+      <p class="testo">Questa modalità è puramente tattica e competitiva, ed elimina tutti gli elementi di narrazione. Qui l'unica cosa che conta è la <strong>vittoria</strong> contro i tuoi avversari. Questa modalità è pensata per i tornei a <strong>8 giocatori</strong> e richiede un tempo notevolmente minore rispetto allo Scenario.</p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">1.3 RANGO</div>
+      <p class="testo">Entrambe le modalità di gioco devono essere associate a un <strong>Rango (1, 2 o 3)</strong>. Questo determinerà in generale la forza e la complessità dei personaggi che possono essere creati e quindi l'esperienza di gioco più competitiva o meno.</p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">1.4 MATCH AMICHEVOLI</div>
+      <p class="testo">Non contano come una modalità di gioco a sé, ma singoli match fra due Fighters sono un modo eccellente per imparare velocemente le regole e fiondarsi su uno <strong>Scenario</strong> o <strong>Torneo</strong>. 
+        <br><em class='text-sky-300'>Sono molto utili per capire se il personaggio che stiamo giocando è divertente da giocare, senza dover per forza giocarlo per tutto lo Scenario/Torneo</em></p>
+    </div>
+  </div>
+
+
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">Sezione 2:</div>
+      <div class="section-title">MATCH</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center">Il match coinvolge esattamente <strong>due Fighters</strong> e dura al <strong>massimo 6 round</strong>. Ogni round di un match prevede 4 fasi: <strong>Setup, Ego, Resolution, End</strong>. 
+    
+    <br><em class='text-sky-300'>I Fighters normalmente iniziano il primo round del match senza Ego, ma alcune regole ed effetti possono cambiare questa situazione.</em></p>
+  <div class="grid">
+    <div class="text-center">
+      <div class="subtitle">2.1 SETUP PHASE</div>
+      <p class="testo">Durante questa fase, <strong>entrambi i Fighters</strong> scelgono segretamente il loro <strong>Setup</strong> per questo round. Il Setup è sempre rappresentato da <strong>due d6</strong>, uno che rappresenta la <strong>Velocità</strong> e l'altro che rappresenta il <strong>Comando</strong> che si vuole usare.<br>
+      <em class='text-sky-300'>I dadi devono essere preferibilmente di colore diverso, in modo da essere chiari sulla rappresentazione delle due caratteristiche.</em></p>
+    
+    </div>
+    <div class="text-center">
+      <div class="subtitle">2.2 EGO PHASE</div>
+      <p class="testo">Durante questa fase, <strong>entrambi i Fighters</strong> rivelano contemporaneamente il loro <strong>Setup</strong> e subiscono <strong>Ego</strong> equivalente al <strong>Costo</strong> del loro <strong>Comando</strong>. Questo <strong>Ego</strong> viene subito anche se il <strong>Comando</strong> non può essere risolto (guarda prossima fase).<br>
+        <em class='text-sky-300'>per esempio, se un Fighter rivela 5 per la Velocità e 4 per Comando, e il comando ha come costo "Setup + 1", il Fighter subirà in totale 10 Ego.</em>
+      </p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">2.3 RESOLUTION PHASE</div>
+      <p class="testo">La combinazione dei due Comandi scelti dai due Fighters determinerà cosa succede:</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Attacco + Attacco</strong>: solo l'Attacco con la Velocità più alta sarà risolto (✔Combo).<br>
+            Se c'è un pareggio, solo l'Attacco con il minor Comando è risolto (✔Combo); tuttavia, Comando 4 è trattato come inferiore a Comando 1.<br>
+            Se il pareggio persiste, nessun Comando viene risolto.</li>
+        <li><strong>Attacco + Blocco</strong>: solo il Blocco viene risolto (✔Combo).</li>
+        <li><strong>Attacco + Scatto</strong>: solo l'Attacco viene risolto (✔Combo).</li>
+        <li><strong>Blocco + Blocco</strong>: nessun Comando viene risolto.</li>
+        <li><strong>Blocco + Scatto</strong>: solo lo Scatto viene risolto (✔Combo).</li>
+        <li><strong>Scatto + Scatto</strong>: nessun Comando viene risolto.</li>
+    </ul>
+
+    <p class="testo"><em class='text-sky-300'>"Risolvere" significa che l'intero effetto di Comando viene risolto, nel preciso ordine in cui è scritto il testo.</em></p>
+    
+    </div>
+    <div class="text-center">
+      <div class="subtitle">2.4 END PHASE</div>
+      <p class="testo">Il round finisce; ogni effetto che cita "alla fine del round" va applicato ora.
+        Quando il <strong>sesto round termina</strong>, il match si conclude e il <strong>Fighter con il minor numero di Danni è il vincitore</strong>.<br>
+        <em class='text-sky-300'>Il match termina anche se il Fighter soffre abbastanza Danni da raggiungere il Danno limite: quel Fighter sarà KO!</em></p>
+    </div>
+  </div>
+
+
+
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">Sezione 3:</div>
+      <div class="section-title">CONCETTI CHIAVE</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center">Per giocare un match bisogna imparare e capire i seguenti concetti</p>
+    
+    <div class="grid">
+      <div class="text-center">
+        <div class="subtitle">3.1 COMBO</div>
+        <p class="testo">Dopo aver risolto un <strong>Comando</strong> che cita qualsiasi <strong>Comando di Attacco</strong> nella sezione "<strong>Combo</strong>", puoi immediatamente risolvere uno di questi <strong>Comandi di Attacco</strong> scegliendo di soffrire <strong>Ego</strong> equivalente al suo <strong>Costo</strong>.
+          Puoi mantenere la <strong>Combo</strong> risolvendo i Comandi fino a un massimo di 3 Comandi risolti nel solito round.</p>  
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.2 COMANDO</div>
+        <p class="testo">
+          I <strong>Comandi</strong> sono le azioni che il nostro Fighter può effettuare durante il match. Ogni Comando è associato a un numero <strong>(da 1 a 6)</strong>, usato in combinazione con il <strong>Dado Comando</strong>.</p>
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.3 DADO COMANDOE</div>
+        <p class="testo">Questo <strong>d6</strong> viene usato durante il <strong>Setup</strong> per pianificare segretamente quale <strong>Comando</strong> il nostro Fighter effettuerà.</p>
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.4 COSTO</div>
+        <p class="testo">I Comandi hanno sempre un costo, rappresentato da un numero, da "Setup", o da "Setup +/- un certo valore". <strong>Setup</strong> è il totale del <strong>Dado Velocità</strong> e <strong>Dado Comando</strong>, tirati dal Fighter durante l'inizio del round in corso. 
+          Il costo dei Comandi fa guadagnare Ego al Fighter durante l'Ego Phase.</p>
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.5 DANNO</div>
+        <p class="testo">
+          Il <strong>Danno</strong> è la principale via per vincere i match. Ogni volta che una risorsa reca Danno a un Fighter, il giocatore corrispondente deve prendere nota di quanto Danno ha subito. Normalmente, un match si inizia con 0 Danni.</p>
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.6 DANNO LIMITE</div>
+        <p class="testo">Questo numero rappresenta la tolleranza al <strong>Danno</strong> per ciascun Fighter. Se un Fighter accumula <strong>Danno uguale o maggiore del loro Danno Limite</strong>, il Fighter è <strong>KO</strong> e l'avversario vince immediatamente il match.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.7 EXTRA</div>
+          <p class="testo">Alcuni effetti in gioco fan sì che i Fighters infliggano "Danni extra", subiscano o recuperino "Ego extra" e così via. "Extra" significa che la quantità originale (<strong>se presente!</strong>) viene aumentata; tuttavia, il totale è <strong>ancora considerato una singola fonte a parte</strong>.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.8 SETUP</div>
+          <p class="testo">Questo valore è il totale del <strong>Dado Velocità</strong> e <strong>Dado Comando</strong>, tirati dal Fighter durante l'inizio del round in corso. Questo significa che il suo valore sarà sempre compreso fra <strong>2 e 12</strong>.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.9 OVERBALDRIVE</div>
+          <p class="testo">L'<strong>OverBaldrive</strong> è una tecnica segreta che può ribaltare le sorti di un match. I Fighters hanno un numero variabile di OverBaldrive a seconda dello Scenario o del Torneo, e ogni OverBaldrive rimane <strong>nascosto fino al suo primo utilizzo</strong>.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.10 EGO</div>
+          <p class="testo">L'<strong>Ego</strong> rappresenta lo stress e la sanità del nostro Fighter. Normalmente i Fighters subiscono Ego eseguendo Comandi di Attacco e lo riducono usando Scatti; tuttavia, può anche essere subito o recuperato a causa di altri effetti.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.11 EGO LIMITE</div>
+          <p class="testo">Questo numero rappresenta la tolleranza all'<strong>Ego</strong> per ciascun Fighter. Quando un Fighter subisce Ego, se l'Ego accumulato è uguale o superiore all'Ego Limite, subirà l'equivalente in Danni.<br>
+            <em class='text-sky-300'>Per esempio, se un Fighter con un Ego Limite pari a 20 è a 19 e subisce una pressione di 10, raggiungerà semplicemente l'Ego di 29; ma se in seguito subisce altro Ego, questo verrà convertito in Danno. D'altra parte, se quel combattente riesce a ridurre il suo Ego a 19 o meno, può di nuovo tornare a subire Ego senza convertirlo in Danno. È tutta una questione di gestione del rischio!</em></p>
+      </div>
+      <div class="text-center">
+        <div class="subtitle">3.12 RISOLVERE</div>
+        <p class="testo">Quando un <strong>Comando</strong> si risolve, tutti i suoi effetti hanno luogo nell'ordine indicato dal Comando stesso.</p>
+      </div>
+      <div class="text-center">
+          <div class="subtitle">3.13 DADO VELOCITÀ</div>
+          <p class="testo">Questo <strong>d6</strong> viene usato durante il <strong>Setup</strong> per pianificare segretamente la velocità del <strong>Comando</strong> che il nostro Fighter effettuerà. La velocità entra in gioco soprattutto quando entrambi i Fighters scelgono di attaccare durante un round, ma influisce anche sui Comandi Blocco e di Scatto per effettuare Combo.</p>
+      </div>
+    </div>
+
+
+
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">Sezione 4:</div>
+      <div class="section-title">CREAZIONE</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center">In Lupus in Baldum Multiverse puoi giocare con chi vuoi! Leaf ha creato le multiversioni di Baldo negli universi, ma tu puoi creare il tuo Fighter seguendo questi steps:</p>
+
+  <div class="grid">
+    <div class="text-center">
+      <div class="subtitle">4.1 DESIGN</div>
+      <p class="testo">Puoi creare qualsiasi Fighter tu voglia: apparenza, nome, vestiario, parlantina, non c'è limite in Lupus in Baldum Multiverse!</p>  
+    </div>
+    <div class="text-center">
+      <div class="subtitle">4.2 SCEGLI UNO STYLE</div>
+      <p class="testo">Scegli uno degli <strong>Styles</strong> per il tuo Fighter (li troverai più avanti). Lo <strong>Style</strong> determina le opzioni di Comando del tuo Fighter e influenza la scelta del tuo <strong>OverBaldrive</strong>. Il tuo Style e i tuoi Comandi sono <strong>pubblici</strong> durante il gioco (al contrario dei tuoi OverBaldrives).<br>
+      <em class="text-sky-300">Il nome di ogni Comando è solo indicativo: assicuratevi di rinominarli in modo che si adattino meglio al vostro personaggio (senza modificare regole o effetti).</em></p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">4.3 SCEGLI GLI OVERBALDRIVES</div>
+      <p class="testo">Scegli un numero di OverBaldrives in base al Rango Baldo scelto per lo Scenario o il Torneo.</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+          <li><strong>Rango 1</strong>: scegli <strong>1 OverBaldrive</strong> dalla lista <strong>Style</strong> del tuo Fighter</li>
+          <li><strong>Rango 2</strong>: scegli <strong>1 OverBaldrive</strong> dalla lista <strong>Style</strong> del tuo Fighter + <strong>1 OverBaldrive</strong> dalla lista Universale</li>
+          <li><strong>Rango 3</strong>: scegli <strong>2 OverBaldrives</strong> dalla lista <strong>Style</strong> del tuo Fighter + <strong>1 OverBaldrive</strong> dalla lista <strong>Universale</strong></li>
+      </ul>
+      <p class="testo">Come regola speciale, i Fighters <strong>Mixup-Style</strong> trattano tutti gli OverBaldrive, compresi quelli Universali, come parte della loro lista.</p>
+      <p class="testo">Si noti che gli OverBaldrives vengono tenuti nascosti e rivelati solo quando li si usa per la prima volta in uno Scenario o in un Torneo; in seguito, rimangono visibili fino alla fine dello scenario o del torneo.<br>
+      <em class="text-sky-300">Come i Comandi, anche gli OverBaldrives possono essere rinominati per adattarsi meglio al personaggio.</em></p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">4.4 ANNOTARE I LIMITI</div>
+      <p class="testo">Registra il Danno Limite ed Ego Limite del tuo Fighter:</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+          <li><strong>Danno Limite</strong>: questo valore è fornito dal tuo <strong>Style</strong>, ma può essere modificato dagli <strong>OverBaldrives</strong>.</li>
+          <li><strong>Ego Limite</strong>: questo valore solitamente è <strong>20</strong>, a meno di modifiche da parte degli <strong>OverBaldrives</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sezionegioco" id="styles">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">BAIT & PUNISH</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">18 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/basket.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style si basa sul bloccare gli attacchi dell'avversario e contrattaccare a piena potenza.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-1"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>TAUNTING STRIKE</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-1"></i>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>2 Danni</strong> al tuo avversario; <strong>poi</strong>, il tuo avversario subisce <strong>1 Ego</strong>.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-2"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>GRAB</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>3 Danni</strong> al tuo avversario; <strong>poi</strong>, se il tuo avversario ha rivelato un <strong>Comando Attacco</strong> durante questo round, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-4"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-3"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>STRONG STRIKE</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup</span>
+              </div>
+              <div class="flex items-center mt-1">
+                <span class="font-semibold">Combo:&nbsp</span>
+                  <i class="bi bi-dice-1"></i>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>5 Danni</strong> al tuo avversario.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-4"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>BARRAGE</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup +1</span>
+              </div>
+              <div class="flex items-center mt-1">
+                <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+          <p><strong>Effetto:</strong></p>
+          <p>Infliggi <strong>3 Danni</strong> al tuo avversario; <strong>poi</strong>, infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, se hai risolto questo Comando come <strong>terzo Comando</strong> in una Combo, infliggi <strong>5 Danni</strong> al tuo avversario.</p>
+      </div>
+      </div>
+
+      <div class="divider divider-info">BLOCCO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-5"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>INTERCEPT</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">4</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-1"></i>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-2"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+      </div>
+
+      <div class="divider divider-success">SCATTO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-6"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>SIDESTEP</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">0</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Riduci il tuo <strong>Ego</strong> di <strong>10</strong>. Se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-1"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">HEAVY</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">22 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/berserk.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style si basa su combo semplici e attacchi pesanti che causano Ego o puniscono i Blocchi.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-1"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>SHORT-RANGE BASH</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-1"></i>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>3 Danni</strong> al tuo avversario.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-2"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>UPPERCUT</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup +1</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-1"></i><i class="bi bi-dice-3"></i>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, quell'avversario subisce <strong>2 Ego</strong>.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-3"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>STOMP</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup +1</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>6 Danni</strong> al tuo avversario.</p>
+            <p><strong>Speciale:</strong> Se riveli questo <strong>Comando Attacco</strong> e l'avversario rivela un <strong>Comando Blocco</strong>, solo questo comando viene risolto.</p>
+        </div>
+      </div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-4"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>ALL-OUT ATTACK</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">Setup</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+          <p><strong>Effetto:</strong></p>
+          <p>Infliggi <strong>10 Danni</strong> al tuo avversario. Fino alla <strong>fine del prossimo round</strong>, ogni volta che tu o il tuo avversario recuperate <strong>Ego</strong>, la quantità recuperata è <strong>dimezzata</strong> (arrotondata per eccesso).</p>
+      </div>
+      </div>
+
+      <div class="divider divider-info">BLOCCO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-5"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>UNBREAKABLE DEFENSE</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">3</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Se il tuo <strong>Dado Velocità</strong> è <strong>uguale</strong> a quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-1"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+      </div>
+
+      <div class="divider divider-success">SCATTO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+          <div class="w-14 h-14 text-4xl">
+            <i class="bi bi-dice-6"></i>
+          </div>
+          <div class="ml-4">
+              <h2 class="subtitle text-left"><em>LEAP</em></h2>
+              <div class="flex items-center mt-2">
+                  <span class="font-semibold">Costo:</span>
+                  <span class="text-red-500 ml-1 semibold">0</span>
+              </div>
+              <div class="flex items-center mt-1">
+                  <span class="font-semibold">Combo: nessuna</span>
+              </div>
+          </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Riduci il tuo <strong>Ego</strong> di <strong>10</strong>. Se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-2"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">HIT & RUN</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">18 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/volley.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style è caratterizzato da un buon potenziale di combo e può recuperare grandi quantità di Ego.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-1"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>QUICK JAB</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-1"></i><i class="bi bi-dice-2"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>2 Danni</strong> al tuo avversario.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-2"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>STRIKE & SHOVE</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>3 Danni</strong> al tuo avversario; <strong>poi</strong>, se hai risolto questo Comando come <strong>secondo Comando</strong> in una Combo, riduci il tuo <strong>Ego</strong> di <strong>2</strong>.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-3"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>TRIP</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup +1</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-1"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>4 Danni</strong> al tuo avversario. Durante il prossimo round, se selezioni un <strong>Comando Scatto</strong> e l'avversario seleziona un <strong>Comando Attacco</strong>, solo il tuo <strong>Scatto</strong> verrà risolto.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-4"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>SUPERSONIC</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>7 Danni</strong> al tuo avversario; <strong>poi</strong>, infliggi <strong>9 Danni</strong> a quell'avversario se il suo <strong>Ego</strong> è <strong>più alto</strong> del tuo.</p>
+          </div>
+      </div>
+
+      <div class="divider divider-info">BLOCCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-5"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>DEFLECT</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">4</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Se il tuo <strong>Dado Velocità</strong> è <strong>uguale</strong> a quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-3"></i></strong>" fino alla fine di questo round.</p>
+          </div>
+      </div>
+
+      <div class="divider divider-success">SCATTO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-6"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>ACROBATICS</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">0</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Riduci il tuo Ego di <strong>12</strong>. Se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello del tuo avversario di <strong>2 o più punti</strong>, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-2"></i></strong>" fino alla fine di questo round.</p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">MIXUP</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">20 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/football.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style è semplice e diretto, senza punti di forza o di debolezza specifici; tuttavia, è lo stile più personalizzabile grazie all'accesso a tutti gli OverBaldrives.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-1"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>PUNCH</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-1"></i><i class="bi bi-dice-2"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>3 Danni</strong> al tuo avversario.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-2"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>KICK</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-2"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>4 Danni</strong> al tuo avversario.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-3"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>HEAVY PUNCH</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>6 Danni</strong> al tuo avversario.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-4"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>BULL RUSH</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup+1</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>8 Danni</strong> al tuo avversario.</p>
+              <p><strong>Speciale:</strong> Se riveli questo <strong>Comando Attacco</strong> e l'avversario rivela un <strong>Comando Blocco</strong>, se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello dell'avversario, solo questo comando viene risolto.</p>
+          </div>
+      </div>
+
+      <div class="divider divider-info">BLOCCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-5"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>GUARD</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">4</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Se il tuo <strong>Dado Velocità</strong> è <strong>uguale</strong> a quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-3"></i></strong>" fino alla fine di questo round.</p>
+          </div>
+      </div>
+
+      <div class="divider divider-success">SCATTO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-6"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>HOP</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">0</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Riduci il tuo Ego di <strong>10</strong>. Se il tuo <strong>Dado Velocità</strong> è <strong>più alto</strong> di quello del tuo avversario di <strong>2 o più punti</strong>, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-1"></i></strong>" fino alla fine di questo round.</p>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">ZONER</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">18 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/sololeveling.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style si basa sulla manipolazione della strategia dell'avversario, danneggiandolo lentamente.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-1"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>LIGHT ARROW</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">Setup</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-1"></i><i class="bi bi-dice-2"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>2 Danni</strong> al tuo avversario.; <strong>poi</strong>, l'avversario subisce <strong>2 Ego</strong>.</p>
+        </div>
+    </div>
+
+    <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-2"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>SNARE</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">Setup</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo: nessuna</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>3 Danni</strong> al tuo avversario, <strong>e</strong> scegli fra <strong>Blocco</strong> o <strong>Scatto</strong>: durante la prossima <strong>Ego Phase</strong>, se il tuo avversario rivela il Comando scelto, subisce <strong>4 Ego</strong>.</p>
+        </div>
+    </div>
+
+    <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-3"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>HEAVY ARROW</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">Setup +1</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo: nessuna</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>6 Danni</strong> al tuo avversario.</p>
+        </div>
+    </div>
+
+    <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-4"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>DANGER ZONE</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">Setup</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo: nessuna</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Infliggi <strong>6 Danni</strong> al tuo avversario; se il tuo avversario ha rivelato un <strong>Comando Attacco</strong> questo round, infliggi invece <strong>8 Danni</strong>.</p>
+            </div>
+    </div>
+
+    <div class="divider divider-info">BLOCCO</div>
+
+    <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-5"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>MISDIRECTION</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">4</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo: nessuna</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Se il tuo <strong>Dado Velocità</strong> è <strong>uguale</strong> a quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-2"></i></strong>" fino alla fine di questo round.</p>
+        </div>
+    </div>
+
+    <div class="divider divider-success">SCATTO</div>
+
+    <div class="boxcard">
+        <div class="flex items-center justify-center">
+            <div class="w-14 h-14 text-4xl">
+                <i class="bi bi-dice-6"></i>
+            </div>
+            <div class="ml-4">
+                <h2 class="subtitle text-left"><em>BACKSTEP</em></h2>
+                <div class="flex items-center mt-2">
+                    <span class="font-semibold">Costo:</span>
+                    <span class="text-red-500 ml-1 semibold">0</span>
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="font-semibold">Combo:&nbsp</span>
+                    <i class="bi bi-dice-3"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 items-center justify-center">
+            <p><strong>Effetto:</strong></p>
+            <p>Riduci il tuo Ego di <strong>10</strong>.</p>
+        </div>
+    </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="sezionegioco">
+    <div class="sezionecont">
+      <div class="section-number">FIGHTER STYLE:</div>
+      <div class="section-title">CHOSEN ONE</div>
+    </div>
+  </div>
+
+  <div class="text-center dmglimit">20 ❤</div>
+
+  <div class="flex items-center justify-center">
+    <div class="avatar">
+      <div class="w-36 rounded overlayimgclass">
+        <img src="./img/kirito2.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="text-center">
+      <p class="testo">Questo Style rischioso si basa sulle combo e sull'infliggere danni il più spesso e il più rapidamente possibile.</p>  
+
+      <div class="divider divider-error">ATTACCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-1"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>CLOSE THE DISTANCE</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-1"></i><i class="bi bi-dice-2"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>3 Danni</strong> al tuo avversario.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-2"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>LAUNCH</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup +1</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-3"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>2 Danni</strong> al tuo avversario. Fino alla fine del prossimo round, ogni volta che una risorsa infligge <strong>Danno</strong> all'avversario, quella risorsa infligge <strong>1 danno extra.</strong></p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-3"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>TAKEDOWN</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>5 Danni</strong> al tuo avversario. L'avversario non può selezionare <strong>Comandi Scatto</strong> durante la prossima <strong>Setup Phase</strong>.</p>
+          </div>
+      </div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-4"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>CHASER</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">Setup</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Infliggi <strong>8 Danni</strong> al tuo avversario; se il tuo avversario rivela un <strong>Comando Scatto</strong> durante questo round, infliggi invece <strong>10 Danni</strong> al tuo avversario</p>
+          </div>
+      </div>
+
+      <div class="divider divider-info">BLOCCO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-5"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>PARRY</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">4</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo: nessuna</span>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Se il tuo <strong>Dado Velocità</strong> è <strong>uguale</strong> a quello del tuo avversario, questo Comando guadagna "<strong>Combo: <i class="bi bi-dice-2"></i></strong>" fino alla fine di questo round.</p>
+          </div>
+      </div>
+
+      <div class="divider divider-success">SCATTO</div>
+
+      <div class="boxcard">
+          <div class="flex items-center justify-center">
+              <div class="w-14 h-14 text-4xl">
+                  <i class="bi bi-dice-6"></i>
+              </div>
+              <div class="ml-4">
+                  <h2 class="subtitle text-left"><em>CARTWHEEL</em></h2>
+                  <div class="flex items-center mt-2">
+                      <span class="font-semibold">Costo:</span>
+                      <span class="text-red-500 ml-1 semibold">0</span>
+                  </div>
+                  <div class="flex items-center mt-1">
+                      <span class="font-semibold">Combo:&nbsp</span>
+                      <i class="bi bi-dice-2"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-4 items-center justify-center">
+              <p><strong>Effetto:</strong></p>
+              <p>Riduci il tuo Ego di <strong>10</strong>.</p>
+          </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="sezionegioco" id="overdrive">
+    <div class="sezionecont">
+      <div class="section-number">Sezione 5:</div>
+      <div class="section-title">OVERBALDRIVES</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center">Questa sezione elenca tutti gli OverBaldrive disponibili nel gioco e spiega come utilizzarli.</p>
+
+  <div class="grid">
+    <div class="text-center">
+      <div class="subtitle">5.1 SCEGLIERE OVERBALDRIVES</div>
+      <p class="testo">Quando si scelgono gli OverBaldrive per un Fighter, bisogna farlo seguendo le regole dello Scenario o del Torneo a cui si partecipa.<br>
+        <em class='text-sky-300'>Si noti che si è liberi di ricostruire parzialmente o interamente il proprio Fighter tra gli Scenari e i Tornei: approfittatene e sperimentate diverse configurazioni di Stile e di OverBaldrive, per trovare la vostra combinazione preferita!</em></p>  
+    </div>
+    <div class="text-center">
+      <div class="subtitle">5.2 RIVELARE OVERBALDRIVES</div>
+      <p class="testo">Gli OverBaldrives non hanno effetto fino a quando non vengono rivelati: prima di allora, è come se il Fighter non li avesse affatto. Per usare un OverBaldrive, semplicemente <strong>rivelalo quando inneschi il suo requisito</strong>. Rivelare un OverBaldrive <strong>è sempre opzionale</strong>, a meno che non sia indicato nel testo. Quando un OverBaldrive è stato rivelato, il suo <strong>Effetto</strong> sarà valido per il resto dello Scenario/Torneo e devi <strong>informare</strong> il tuo avversario di ciò.<br>
+      <em class="text-sky-300">A volte è più saggio scegliere la via più difficile e tentare di vincere una partita senza utilizzare un'OverBaldrive, in modo tale da nasconderlo fino a quando non se ne ha veramente bisogno.</em></p>
+    </div>
+    <div class="text-center">
+      <div class="subtitle">5.3 OVERBALDRIVES UNIVERSALI</div>
+
+      <div class="columns">
+        <div class="text-center">
+          <div class="subtitlename">EXPLOSIVE FINISHER</div>
+          <p class="testo"><strong>Condizione</strong>: Risolvi il terzo Comando di una Combo che comprendeva 2 o più Comandi di Attacco diversi.
+            <br>
+            <strong>Effetto</strong>: Ogni volta che si risolve il terzo Comando di una Combo che include 2 o più Comandi di Attacco diversi, si può infliggere 4 Danni all'avversario dopo che la Combo è stata completamente risolta.</p>  
+        </div>
+
+        <div class="text-center">
+          <div class="subtitlename">CHANGE STANCE</div>
+          <p class="testo"><strong>Condizione</strong>: Risolvi il tuo Comando di Scatto.
+            <br>
+            <strong>Effetto</strong>: </p>  
+        </div>
+
+        <div class="text-center">
+          <div class="subtitlename">DEFIANCE</div>
+          <p class="testo"><strong>Condizione</strong>: Il tuo avversario rivela un <strong>OverBaldrive</strong>.
+            <br>
+            <strong>Effetto</strong>: Ogni volta che un avversario rivela un OverBaldrive, puoi immediatamente ridurre il tuo <strong>Ego</strong> di <strong>5</strong>.</p>  
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="btm-nav fixed">
+          <button class="text-info" id="scrollToTopButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </button>
+          <button class="text-info" id="scrollToRulesButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </button>
+          <button class="text-info" id="scrollToStyleButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+            </svg>
+          </button>
+          <button class="text-info" id="scrollToOverdriveButton">
+            <i class="bi bi-journal-bookmark thick-icon"></i>
+          </button>
+          <button class="text-info">
+            <label class="swap swap-rotate">
+              <!-- this hidden checkbox controls the state -->
+              <input id="theme-toggle" type="checkbox" />
+            
+              <!-- sun icon -->
+              <svg
+                class="swap-on h-5 w-5 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                  d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+              </svg>
+            
+              <!-- moon icon -->
+              <svg
+                class="swap-off h-5 w-5 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                  d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+              </svg>
+            </label>
+          </button>
+  </div>
+        
+  <footer class="footer footer-center bg-base-300 text-base-content p-4">
+      <aside>
+          <p>Copyright © 2024 - All right reserved by Leafgoski</p>
+          <p class="py-1 text-xs">Il gioco è un reskin del gioco FIGHTING HEARTS OVERDRIVE, di Emanuele Galletto, e nasce come semplice regalo</p>
+      </aside>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+
+</body>
+</html>
