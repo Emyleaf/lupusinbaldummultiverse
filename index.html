@@ -16,7 +16,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -49,7 +50,7 @@
   </div>
 
   <div class="sezionegioco" id="rules">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">Sezione 1:</div>
       <div class="section-title">MODALITÀ DI GIOCO</div>
     </div>
@@ -62,7 +63,7 @@
       <p class="testo">Questa modalità combina le regole del combattimento uno contro uno con la narrazione, concentrandosi sulla storia piuttosto che sulla competizione. È assolutamente possibile perdere tutti i combattimenti e comunque creare e vivere una
         una narrazione coinvolgente <em class="text-sky-300">(infatti, vincere tutti i combattimenti può portare a un bad ending del personaggio!)</em>.
         
-        Questa modalità è pensata per un gruppo di <strong>4-6 giocatori</strong> (master incluso) e richiede circa <strong>3-4 ore</strong> di gioco. Più scenari possono essere collegati tra loro per giocare una storia più lunga, nota anche come <strong>Campagna</strong>.</p>
+        Questa modalità è pensata per un gruppo di <strong>4-6 giocatori</strong> e richiede circa <strong>3-4 ore</strong> di gioco. Più scenari possono essere collegati tra loro per giocare una storia più lunga, nota anche come <strong>Campagna</strong>.</p>
     </div>
     <div class="text-center dont">
       <div class="subtitle">1.2 TORNEO</div>
@@ -82,7 +83,7 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">Sezione 2:</div>
       <div class="section-title">MATCH</div>
     </div>
@@ -133,7 +134,7 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">Sezione 3:</div>
       <div class="section-title">CONCETTI CHIAVE</div>
     </div>
@@ -164,7 +165,7 @@
       <div class="text-center dont">
         <div class="subtitle">3.5 DANNO</div>
         <p class="testo">
-          Il <strong>Danno</strong> è la principale via per vincere i match. Ogni volta che una risorsa reca Danno a un Fighter, il giocatore corrispondente deve prendere nota di quanto Danno ha subito. Normalmente, un match si inizia con 0 Danni.</p>
+          Il <strong>Danno</strong> è la principale via per vincere i match. Ogni volta che una risorsa reca Danno a un Fighter, il Giocatore corrispondente deve prendere nota di quanto Danno ha subito. Normalmente, un match si inizia con 0 Danni.</p>
       </div>
       <div class="text-center dont">
         <div class="subtitle">3.6 DANNO LIMITE</div>
@@ -204,7 +205,7 @@
 
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">Sezione 4:</div>
       <div class="section-title">CREAZIONE</div>
     </div>
@@ -247,9 +248,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco" id="styles">
-    <div class="sezionecont">
+    <div class="sezionecont text-center text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">MAGICIAN</div>
+      <div class="section-title">(Bait & Punish)</div>
     </div>
   </div>
 
@@ -416,9 +418,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">BERSERK</div>
+      <div class="section-title">(Heavy)</div>
     </div>
   </div>
 
@@ -585,9 +588,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">RANGER</div>
+      <div class="section-title">(Hit & Run)</div>
     </div>
   </div>
 
@@ -753,9 +757,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">SHAPESHIFTER</div>
+      <div class="section-title">(Mixup)</div>
     </div>
   </div>
 
@@ -922,9 +927,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">TACTICIAN</div>
+      <div class="section-title">(Zoner)</div>
     </div>
   </div>
 
@@ -1090,9 +1096,10 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">ASSASSIN</div>
+      <div class="section-title">(Rushdown)</div>
     </div>
   </div>
 
@@ -1259,7 +1266,7 @@
   <div class="pagebreak"> </div>
 
   <div class="sezionegioco" id="overdrive">
-    <div class="sezionecont">
+    <div class="sezionecont text-center">
       <div class="section-number">Sezione 5:</div>
       <div class="section-title">OVERBALDRIVES</div>
     </div>
@@ -1479,13 +1486,176 @@
 
   </div>
 
+  <div class="pagebreak"> </div>
 
+  <div class="sezionegioco" id="overdrive">
+    <div class="sezionecont text-center">
+      <div class="section-number">Sezione 6:</div>
+      <div class="section-title">SCENARIO</div>
+    </div>
+  </div>
 
+ <div class="grid">
+    
+    <div class="text-center dont">
+      <div class="subtitle">6.1 PREPARAZIONE</div>
+      <p class="testo">Radunate <strong>3-6 giocatori</strong>. Ogni Giocatore deve approvare il <strong>tono</strong>, lo <strong>stile</strong> e le <strong>premesse</strong> dello Scenario.</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Regole</strong>: Scegliete il <strong>Rango</strong> con cui giocare <strong>(1, 2 o 3)</strong>; discutete di eventuali house rules o cambiamenti di regole in generale.</li>
+        <li><strong>Tema</strong>: Scegliete quali <strong>Carte Tema</strong> sono più appropriate per il vostro Scenario. Se una Carta Tema non piace, siete liberi di modificarla.</li>
+        <li><strong>Creazione Fighter</strong>: ogni Giocatore crea il proprio Fighter.</li>
+      </ul>
+    </div>
 
+    <div class="text-center dont">
+      <div class="subtitle">6.2 SETUP</div>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Carte Tema</strong>: Ogni Giocatore riceve una <strong>Carta Tema</strong> unica per il proprio Fighter; potete sceglierle o distribuirle a caso, ma due Fighter non possono avere la stessa Carta. I giocatori
+          possono sempre rifiutare una Carta Tema e sceglierne una diversa.</li>
+        <li><strong>Legami</strong>: Ogni Giocatore scrive i nomi degli altri Fighters nella sezione Legami.</li>
+      </ul>
+    </div>
 
+    <div class="text-center dont">
+      <div class="subtitle">6.3 NARRAZIONE</div>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Tutti i giocatori</strong>: Ogni Giocatore ha <strong>sempre</strong> l'autorità di narrazione sul suo Fighter (cosa fa, come reagisce, cosa dice, etc.), e possono rifiutare o modificare quello che aggiunge il <strong>Gruppo</strong> se coinvolge il proprio Figher.</li>
+        <li><strong>Giocatore Attivo</strong>: Il Giocatore che sta giocando nel proprio turno ha l'autorità di narrare su tutto e tutti nella scena, a eccezione dei Fighter altrui, e può sempre rifiutare o modificare quello che aggiunge il <strong>Gruppo</strong>.</li>
+        <li><strong>Gruppo</strong>: Ogni Giocatore il cui Fighter non è presente in una scena
+          può aggiungere dettagli, descrivere le reazioni degli NPC, i danni collaterali e così via.</li>      
+      </ul>
+    </div>
 
+    <div class="text-center dont">
+      <div class="subtitle">6.4 STAGE I - <span style="color: red;">ENTRATA</span></div>
+      <p class="testo">A partire dal Giocatore la cui <strong>Carta Tema</strong> ha la <strong>priorità più alta</strong>, e procedendo in senso <strong>orario</strong>, ogni Giocatore narra una
+        scena per introdurre il proprio Fighter e intreccia la propria Carta Tema nelle premesse dello Scenario.</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Obiettivi</strong>: Narrate la situazione e presentate i vostri Fighter nel modo più fiko possibile, facendo presente quali sono le sue motivazioni.</li>
+        <li><strong>Inviti</strong>: Il <strong>Giocatore Attivo</strong> può invitare altri Fighter nella scena, che possono anche rifiutarsi. I giocatori il cui Fighter non è presente in scena possono comunque contribuire facendo parte del <strong>Gruppo</strong>.</li>
+        <li><strong>Match</strong>: Ogni combattimento che avviene in questo Stage è puramente "cutscene material" e non garantisce nessuna ricompensa. I Fighters dovrebbero<strong> evitare di combattersi fra di loro</strong> in questo Stage.</li>      
+      </ul>
+      <p class="testo">Dopo che tutti sono stati <strong>Giocatori Attivi</strong>, questo Stage finisce; dopo, ogni Giocatore <strong>assegna un valore di +1 o -1 a ogni Legame</strong>.</p>
+    </div>
 
+    <div class="text-center dont">
+      <div class="subtitle">6.5 STAGE II - <span style="color: red;">SFIDA</span></div>
+      <p class="testo">A partire dal Giocatore la cui <strong>Carta Tema</strong> ha la <strong>priorità più bassa</strong>, e procedendo in senso <strong>orario</strong>, ogni Giocatore narra una
+        scena dove il proprio Fighter sfida il Fighter del Giocatore alla sua <strong>sinistra</strong> in un <strong>Match</strong>.</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Obiettivi</strong>: Ruolate le vostre provocazioni, descrivete i vostri scambi di colpi con dettagli esagerati, non siate <strong>noiosi</strong>. Quando l'incontro termina, descrivete il modo in cui i vostri Fighters si separano: per quanto possano essere feriti, ne escono sempre vivi.</li>
+        <li><strong>Inviti</strong>: Il<strong> Giocatore Attivo</strong> e il Giocatore alla sua <strong>sinistra</strong> sono automaticamente parte della scena; il <strong>Giocatore Attivo</strong> può invitare altri Fighter, ma non possono intervenire nel Match. I giocatori il cui Fighter non è presente in scena possono comunque contribuire facendo parte del <strong>Gruppo</strong>.</li>
+        <li><strong>Match</strong>: Il <strong>vincitore</strong> guadagna <strong>2 Progressi</strong>, o <strong>3</strong> se l'incontro è stato vinto per K.O. per Danno Limite. Il <strong>perdente</strong> guadagna <strong>1 Progresso</strong>. In caso di <strong>parità</strong>, entrambi guadagnano <strong>2 Progressi</strong>.</li>      
+      </ul>
+      <p class="testo">Alla fine di <strong>ogni Match</strong>, tutti i giocatori i cui Fighter <strong>non hanno combattuto il Match</strong>, aggiustano i loro <strong>Legami</strong> verso i Fighters che hanno combattuto, di <strong>+2 o -2</strong> (possono aumentare entrambi i Legami di 2, diminuirle entrambe di 2, o aumentarne una e diminuirne l'altra). Dopo che tutti sono stati <strong>Giocatore Attivo</strong> una volta, questo Stage termina.</p>
+    </div>
 
+    <div class="text-center dont">
+      <div class="subtitle">6.6 STAGE III - <span style="color: red;">SHOWDOWN</span></div>
+      <p class="testo">È il momento del duello finale: uno dei Fighter sarà consumato dall'oscurità e un altro sorgerà per affrontarlo. Ogni Giocatore calcola il <strong>Progresso totale</strong> del proprio Fighter (pari al Progresso ottenuto durante il secondo Stage - Sfida). Ogni Giocatore calcola il <strong>totale Legame</strong> del proprio Fighter (pari alla somma dei punteggi Legame di tutti gli altri nei confronti del proprio Fighter; questo può essere negativo, ovviamente).</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>L'Eminenza grigia</strong>: Il Fighter con il <strong>totale Legami più basso</strong> diventa <strong>l'Eminenza grigia</strong> e si trasforma in un villain. In caso di parità, vince il <strong>Progresso più alto</strong>; se ancora c'è ancora parità, vince la <strong>Priorità più alta</strong>. Durante questo Stage, l'Eminenza grigia aumenta il proprio <strong>Danno Limite</strong> di un'ammontare pari al proprio Progresso totale.</li>
+        <li><strong>La Speranza</strong>: Il Fighter con il <strong>totale Legami più alto</strong> diventa la <strong>Speranza</strong>, colui che ha la possibilità di fermare l'Eminenza Grigia. In caso di parità, vince il <strong>Progresso più basso</strong>; se ancora c'è ancora parità, vince la <strong>Priorità più bassa</strong>. Durante questo Stage, la Speranza <strong>ripristina l'utilizzo di tutti i Legami</strong>.</li>
+        <li><strong>Obiettivi</strong>: Portate lo scenario a un clima di tensione. Combattete come non avete mai combattuto prima. Ruolate al massimo delle vostre possibilità: questo è lo Showdown!</li>
+        <li><strong>Gruppo</strong>: Tutti gli altri Fighter al di fuori dell'Eminenza grigia e la Speranza fanno parte del <strong>Gruppo</strong>; possono far apparire il loro Fighter durante la scena finale come spettatori o come prossime vittime dell'Eminenza.</li>
+        <li><strong>Regola speciale</strong>: Questo Match può continuare oltre i sei classici round, e <strong>termina solo quando uno dei Fighter finisce KO!</strong> Se il Giocatore lo desidera, il perdente <strong>può scegliere la morte</strong>.</li>
+      </ul>
+      <p class="testo">Quando il <strong>Match finisce</strong>, questo Stage termina.</p>
+    </div>
+
+    <div class="text-center dont">
+      <div class="subtitle">6.7 STAGE IV - <span style="color: red;">EPILOGO</span></div>
+      <p class="testo">Insieme, la Speranza e l'Eminenza grigia narrano la conclusione del loro combattimento; poi, ogni altro Giocatore narra una breve scena incentrata sul proprio Fighter, in ordine di <strong>Priorità crescente</strong>.</p>
+      <ul class="list-disc mx-auto w-3/4 text-left testo">
+        <li><strong>Obiettivi</strong>: Mostrate come ogni Fighter affronta le conseguenze dello scenario e l'esito dello Showdown.</li>
+        <li><strong>Inviti</strong>: Il <strong>Giocatore Attivo</strong> può invitare altri Fighters nella propria scena. Gli altri non presenti possono contribuire come <strong>Gruppo</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pagebreak"> </div>
+
+  <div class="sezionegioco no-print" id="overdrive">
+    <div class="sezionecont text-center">
+      <div class="section-number">FAST RECAP</div>
+      <div class="section-title">All Fighters!</div>
+    </div>
+  </div>
+
+  <p class="paragrafo text-center">Non vuoi scrivere su carta e penna? Non hai voglia di creare un Fighter? No problem! Seleziona lo Style che preferisci e tieni il telefono a portata di mano!</p>
+
+  <div class="flex justify-center text-center">
+    <div role="tablist" class="tabs tabs-bordered">
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="B&P" checked="checked" />
+      <div role="tabpanel" class="tab-content p-10">
+
+        <div class="text-center dmglimit">18 ❤</div>
+      
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/basket.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg" onclick="popup1bp()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️2; 💀1</p>
+          </button>
+        
+          <button class="btn btn-lg" onclick="popup2bp()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️3; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg" onclick="popup3bp()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️5</p>
+          </button>
+        
+          <button class="btn btn-lg" onclick="popup4bp()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️3; ⚔️4; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg" onclick="popup5bp()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs">🏃‍♂️>; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg" onclick="popup6bp()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀10; 🏃‍♂️>; ✨</p>
+          </button>
+        </div>
+        
+
+      </div>
+    
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Heavy"  />
+      <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
+    
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="H&R" />
+      <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
+
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Mixup"  />
+      <div role="tabpanel" class="tab-content p-10">Tab content 4</div>
+    
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Zoner" />
+      <div role="tabpanel" class="tab-content p-10">Tab content 5</div>
+
+      <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Rush"  />
+      <div role="tabpanel" class="tab-content p-10">Tab content 6</div>
+    </div>
+  </div>
 
   <div class="btm-nav fixed no-print">
           <button class="text-info" id="scrollToTopButton">
@@ -1568,6 +1738,7 @@
 
   <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+  <script src="./js/popupcards.js"></script>
 
 </body>
 </html>

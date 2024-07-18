@@ -1,6 +1,6 @@
 module.exports = {
     //...
     daisyui: {
-      themes: ["dark", "cupcake"],
+      themes: ["cupcake", "dark"],
     },
   }
