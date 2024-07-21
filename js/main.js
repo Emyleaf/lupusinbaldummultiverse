@@ -1,12 +1,12 @@
 const scrollToTopButton = document.getElementById('scrollToTopButton');
 
 // Aggiungi l'evento click al pulsante per scorrere verso l'alto
-scrollToTopButton.addEventListener('click', () => {
+/*scrollToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-});
+});*/
 
 const scrollToRulesButton = document.getElementById('scrollToRulesButton');
 const scrollToRulesButton2 = document.getElementById('scrollToRulesButton2');
@@ -40,6 +40,15 @@ const scrollToOverdriveButton = document.getElementById('scrollToOverdriveButton
 // Aggiungi l'evento click al pulsante per scorrere verso l'alto
 scrollToOverdriveButton.addEventListener('click', () => {
   document.getElementById('overdrive').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+const scrollToPlayButton = document.getElementById('scrollToPlayButton');
+
+// Aggiungi l'evento click al pulsante per scorrere verso l'alto
+scrollToPlayButton.addEventListener('click', () => {
+  document.getElementById('play').scrollIntoView({
     behavior: 'smooth'
   });
 });

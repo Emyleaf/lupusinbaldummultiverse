@@ -124,7 +124,7 @@ body {
         page-break-inside: avoid;
     }
 
-    .no-print, .btn, .footer, .no-print *{
+    .no-print, .btn, .footer, .interactive, .no-print *{
         display: none !important;
     }
 

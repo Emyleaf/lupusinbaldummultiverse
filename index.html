@@ -49,6 +49,11 @@
     </div>
   </div>
 
+  <div class="drawer">
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <!-- Page content here -->
+  
   <div class="sezionegioco" id="rules">
     <div class="sezionecont text-center">
       <div class="section-number">Sezione 1:</div>
@@ -1353,7 +1358,7 @@
           <div class="subtitlename">PIXIE</div>
           <p class="testo"><strong>Condizione</strong>: Hai preso <strong>Danno</strong>.
             <br>
-            <strong>Effetto</strong>: Ogni volta che prendi <strong>Danno</strong>, guadagni <strong>1 PIXIE</strong>; non puoi avere più di <strong>1 PIXIE</strong>. Ogni volta che subisci <strong>Ego</strong> per risolvere <strong>un secondo o terzo Comando</strong> in una <strong>Combo</strong>, puoi spendere <strong>1 PIXIE</strong> per non subire <strong>Ego</strong>.</p>  
+            <strong>Effetto</strong>: Ogni volta che prendi <strong>Danno</strong>, guadagni <strong>1 Pixie</strong>; non puoi avere più di <strong>1 Pixie</strong>. Ogni volta che subisci <strong>Ego</strong> per risolvere <strong>un secondo o terzo Comando</strong> in una <strong>Combo</strong>, puoi spendere <strong>1 Pixie</strong> per non subire <strong>Ego</strong>.</p>  
         </div>
 
         <div class="text-center dont">
@@ -1526,6 +1531,8 @@
       </ul>
     </div>
 
+    <div class="pagebreak"> </div>
+
     <div class="text-center dont">
       <div class="subtitle">6.4 STAGE I - <span style="color: red;">ENTRATA</span></div>
       <p class="testo">A partire dal Giocatore la cui <strong>Carta Tema</strong> ha la <strong>priorità più alta</strong>, e procedendo in senso <strong>orario</strong>, ogni Giocatore narra una
@@ -1549,6 +1556,8 @@
       </ul>
       <p class="testo">Alla fine di <strong>ogni Match</strong>, tutti i giocatori i cui Fighter <strong>non hanno combattuto il Match</strong>, aggiustano i loro <strong>Legami</strong> verso i Fighters che hanno combattuto, di <strong>+2 o -2</strong> (possono aumentare entrambi i Legami di 2, diminuirle entrambe di 2, o aumentarne una e diminuirne l'altra). Dopo che tutti sono stati <strong>Giocatore Attivo</strong> una volta, questo Stage termina.</p>
     </div>
+
+    <div class="pagebreak"> </div>
 
     <div class="text-center dont">
       <div class="subtitle">6.6 STAGE III - <span style="color: red;">SHOWDOWN</span></div>
@@ -1575,7 +1584,9 @@
 
   <div class="pagebreak"> </div>
 
-  <div class="sezionegioco no-print" id="overdrive">
+  <div class="interactive">
+
+  <div class="sezionegioco no-print" id="play">
     <div class="sezionecont text-center">
       <div class="section-number">FAST RECAP</div>
       <div class="section-title">All Fighters!</div>
@@ -1906,20 +1917,15 @@
     </div>
   </div>
 
+</div>
+
   <div class="btm-nav fixed no-print">
-          <button class="text-info" id="scrollToTopButton">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          <button class="text-info">
+            <label for="my-drawer" class="drawer-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
             </svg>
+          </label>    
           </button>
           <button class="text-info" id="scrollToRulesButton">
             <svg
@@ -1951,6 +1957,11 @@
           </button>
           <button class="text-info" id="scrollToOverdriveButton">
             <i class="bi bi-journal-bookmark thick-icon"></i>
+          </button>
+          <button class="text-info" id="scrollToPlayButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+            </svg>            
           </button>
           <button class="text-info">
             <label class="swap swap-rotate">
@@ -1984,6 +1995,98 @@
           <p class="py-1 text-xs">Il gioco è un reskin del gioco FIGHTING HEARTS OVERDRIVE, di Emanuele Galletto, e nasce come semplice regalo</p>
       </aside>
   </footer>
+
+</div>
+<div class="drawer-side">
+  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+  <ul class="menu bg-base-200 text-base-content min-h-full w-60 p-2">
+    <!-- Sidebar content here -->
+    <li>
+      <a><strong>1. Modalità di Gioco</strong></a>
+      <ul>
+        <li><a>1.1 Scenario</a></li>
+        <li><a>1.2 Torneo</a></li>
+        <li><a>1.3 Rango</a></li>
+        <li><a>1.4 Match amichevoli</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><strong>2. Match</strong></a>
+      <ul>
+        <li><a>2.1 Setup Phase</a></li>
+        <li><a>2.2 Ego Phase</a></li>
+        <li><a>2.3 Resolution Phase</a></li>
+        <li><a>2.4 End Phase</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><strong>3. Concetti Chiave</strong></a>
+      <ul>
+        <li><a>3.1 Combo</a></li>
+        <li><a>3.2 Comando</a></li>
+        <li><a>3.3 Dado Comando</a></li>
+        <li><a>3.4 Costo</a></li>
+        <li><a>3.5 Danno</a></li>
+        <li><a>3.6 Danno Limite</a></li>
+        <li><a>3.7 Extra</a></li>
+        <li><a>3.8 Setup</a></li>
+        <li><a>3.9 OverBaldrive</a></li>
+        <li><a>3.10 Ego</a></li>
+        <li><a>3.11 Ego Limite</a></li>
+        <li><a>3.12 Risolvere</a></li>
+        <li><a>3.13 Dado Velocità</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><strong>4. Creazione</strong></a>
+      <ul>
+        <li><a>4.1 Design</a></li>
+        <li><a>4.2 Scegli uno Style</a></li>
+        <li><a>4.3 Scegli gli OverBaldrives</a></li>
+        <li><a>4.4 Annotare i Limiti</a></li>
+        <li><a>4.5 Fighter Style</a></li>
+        <ul>
+        <li><a>Bait&Punish</a></li>
+        <li><a>Heavy</a></li>
+        <li><a>Hit&Run</a></li>
+        <li><a>Mixup</a></li>
+        <li><a>Zoner</a></li>
+        <li><a>Rushdown</a></li>
+        </ul>
+      </ul>
+    </li>
+    <li>
+      <a><strong>5. OverBaldrives</strong></a>
+      <ul>
+        <li><a>5.1 Scegliere OverBaldrives</a></li>
+        <li><a>5.2 Rivelare OverBaldrives</a></li>
+        <li><a>5.3 OverBaldrives Universali</a></li>
+        <li><a>5.4 OverBaldrives Bait&Punish</a></li>
+        <li><a>5.5 OverBaldrives Heavy</a></li>
+        <li><a>5.6 OverBaldrives Hit&Run</a></li>
+        <li><a>5.7 OverBaldrives Zoner</a></li>
+        <li><a>5.8 OverBaldrives Rushdown</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><strong>6. Scenario</strong></a>
+      <ul>
+        <li><a>5.1 Preparazione</a></li>
+        <li><a>5.2 Setup</a></li>
+        <li><a>5.3 Narrazione</a></li>
+        <li><a>5.4 Stage I - Entrata</a></li>
+        <li><a>5.5 Stage II - Sfida</a></li>
+        <li><a>5.6 Stage III - Showdown</a></li>
+        <li><a>5.7 Stage IV - Epilogo</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><strong>7. ✨ PLAY NOW! ✨</strong></a>
+    </li>
+    
+  </ul>
+</div>
+</div>
 
   <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
