@@ -483,7 +483,7 @@
         </div>
         <div class="mt-4 items-center justify-center">
             <p><strong>Effetto:</strong></p>
-            <p>Infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, quell'avversario subisce <strong>2 Ego</strong>.</p>
+            <p>Infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, subisce <strong>2 Ego</strong>.</p>
         </div>
       </div>
 
@@ -1584,6 +1584,7 @@
 
   <p class="paragrafo text-center">Non vuoi scrivere su carta e penna? Non hai voglia di creare un Fighter? No problem! Seleziona lo Style che preferisci e tieni il telefono a portata di mano!</p>
 
+  <p class="paragrafo text-center">⚔️ danni inflitti<br>💀 ego inflitto<br>✨ condizione<br>🏃‍♂️ dado velocità</p>
   <div class="flex justify-center text-center">
     <div role="tablist" class="tabs tabs-bordered">
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="B&P" checked="checked" />
@@ -1602,22 +1603,22 @@
         <div class="divider divider-error">ATTACCO</div>
         
         <div class="grid grid-cols-2 gap-4">
-          <button class="btn btn-lg" onclick="popup1bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup1bp()">
             <i class="bi bi-dice-1 text-4xl"></i>
             <p class="text-xs">⚔️2; 💀1</p>
           </button>
         
-          <button class="btn btn-lg" onclick="popup2bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup2bp()">
             <i class="bi bi-dice-2 text-4xl"></i>
             <p class="text-xs">⚔️3; ✨</p>
           </button>
         
-          <button class="btn btn-lg" onclick="popup3bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup3bp()">
             <i class="bi bi-dice-3 text-4xl"></i>
             <p class="text-xs">⚔️5</p>
           </button>
         
-          <button class="btn btn-lg" onclick="popup4bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup4bp()">
             <i class="bi bi-dice-4 text-4xl"></i>
             <p class="text-xs">⚔️3; ⚔️4; ✨</p>
           </button>
@@ -1626,34 +1627,282 @@
         
           <div class="divider divider-success">SCATTO</div>
           
-          <button class="btn btn-lg" onclick="popup5bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup5bp()">
             <i class="bi bi-dice-5 text-4xl"></i>
-            <p class="text-xs">🏃‍♂️>; ✨</p>
+            <p class="text-xs"><🏃‍♂️ →	✨</p>
           </button>
         
-          <button class="btn btn-lg" onclick="popup6bp()">
+          <button class="btn btn-lg rounded-none" onclick="popup6bp()">
             <i class="bi bi-dice-6 text-4xl"></i>
-            <p class="text-xs">⬇️💀10; 🏃‍♂️>; ✨</p>
+            <p class="text-xs">⬇️💀10; <🏃‍♂️ →	✨</p>
           </button>
         </div>
-        
 
       </div>
     
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Heavy"  />
-      <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
+      <div role="tabpanel" class="tab-content p-10">
+
+        <div class="text-center dmglimit">22 ❤</div>
+      
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/berserk.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg rounded-none" onclick="popup1h()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️3</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup2h()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️4; 💀2</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup3h()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️5; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup4h()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️10; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg rounded-none" onclick="popup5h()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs"><🏃‍♂️ →	✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup6h()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀10; <🏃‍♂️ →	✨</p>
+          </button>
+        </div>
+
+      </div>
     
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="H&R" />
-      <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
+      <div role="tabpanel" class="tab-content p-10">
+
+        <div class="text-center dmglimit">18 ❤</div>
+
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/volley.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg rounded-none" onclick="popup1hr()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️2</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup2hr()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️3; ✨→⬇️💀2</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup3hr()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️4; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup4hr()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️7; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg rounded-none" onclick="popup5hr()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs">=🏃‍♂️→✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup6hr()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀12; <2+🏃‍♂️→✨</p>
+          </button>
+        </div>
+
+      </div>
 
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Mixup"  />
-      <div role="tabpanel" class="tab-content p-10">Tab content 4</div>
+      <div role="tabpanel" class="tab-content p-10">
+        <div class="text-center dmglimit">20 ❤</div>
+
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/football.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg rounded-none" onclick="popup1mix()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️3</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup2mix()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️4</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup3mix()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️6</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup4mix()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️8; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg rounded-none" onclick="popup5mix()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs">=🏃‍♂️→✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup6mix()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀10; <2+🏃‍♂️→✨</p>
+          </button>
+        </div>
+
+      </div>
     
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Zoner" />
-      <div role="tabpanel" class="tab-content p-10">Tab content 5</div>
+      <div role="tabpanel" class="tab-content p-10">
+
+        <div class="text-center dmglimit">18 ❤</div>
+
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/sololeveling.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg rounded-none" onclick="popup1zoner()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️2; 💀2</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup2zoner()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️3; ✨→💀4</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup3zoner()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️6</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup4zoner()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️6; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg rounded-none" onclick="popup5zoner()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs">=🏃‍♂️→✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup6zoner()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀10</p>
+          </button>
+        </div>
+
+      </div>
 
       <input type="radio" name="my_tabs_1" role="tab" class="tab text-xs" aria-label="Rush"  />
-      <div role="tabpanel" class="tab-content p-10">Tab content 6</div>
+      <div role="tabpanel" class="tab-content p-10">
+
+        <div class="text-center dmglimit">20 ❤</div>
+
+        <div class="flex items-center justify-center">
+          <div class="avatar">
+            <div class="w-36 rounded overlayimgclass">
+              <img src="./img/kirito2.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="divider divider-error">ATTACCO</div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn btn-lg rounded-none" onclick="popup1rush()">
+            <i class="bi bi-dice-1 text-4xl"></i>
+            <p class="text-xs">⚔️3</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup2rush()">
+            <i class="bi bi-dice-2 text-4xl"></i>
+            <p class="text-xs">⚔️2; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup3rush()">
+            <i class="bi bi-dice-3 text-4xl"></i>
+            <p class="text-xs">⚔️5; ✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup4rush()">
+            <i class="bi bi-dice-4 text-4xl"></i>
+            <p class="text-xs">⚔️8; ✨</p>
+          </button>
+        
+          <div class="divider divider-info">BLOCCO</div>
+        
+          <div class="divider divider-success">SCATTO</div>
+          
+          <button class="btn btn-lg rounded-none" onclick="popup5rush()">
+            <i class="bi bi-dice-5 text-4xl"></i>
+            <p class="text-xs">=🏃‍♂️→✨</p>
+          </button>
+        
+          <button class="btn btn-lg rounded-none" onclick="popup6rush()">
+            <i class="bi bi-dice-6 text-4xl"></i>
+            <p class="text-xs">⬇️💀10</p>
+          </button>
+        </div>
+
+      </div>
     </div>
   </div>
 
