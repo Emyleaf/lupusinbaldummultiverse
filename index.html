@@ -56,7 +56,7 @@
   
   <div class="sezionegioco" id="rules">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 1:</div>
+      <div id="1" class="section-number">Sezione 1:</div>
       <div class="section-title">MODALITÀ DI GIOCO</div>
     </div>
   </div>
@@ -64,22 +64,21 @@
   <p class="paragrafo text-center"><strong>Lupus in Baldum Multiverse</strong> è un gioco da tavolo ibrido a un gioco di ruolo che può essere giocato in due modalità: <strong>Scenario</strong> e <strong>Torneo</strong>.</p>
   <div class="grid">
     <div class="text-center dont">
-      <div class="subtitle">1.1 SCENARIO</div>
+      <div id="11" class="subtitle">1.1 SCENARIO</div>
       <p class="testo">Questa modalità combina le regole del combattimento uno contro uno con la narrazione, concentrandosi sulla storia piuttosto che sulla competizione. È assolutamente possibile perdere tutti i combattimenti e comunque creare e vivere una
         una narrazione coinvolgente <em class="text-sky-300">(infatti, vincere tutti i combattimenti può portare a un bad ending del personaggio!)</em>.
         
         Questa modalità è pensata per un gruppo di <strong>4-6 giocatori</strong> e richiede circa <strong>3-4 ore</strong> di gioco. Più scenari possono essere collegati tra loro per giocare una storia più lunga, nota anche come <strong>Campagna</strong>.</p>
     </div>
     <div class="text-center dont">
-      <div class="subtitle">1.2 TORNEO</div>
-      <p class="testo">Questa modalità è puramente tattica e competitiva, ed elimina tutti gli elementi di narrazione. Qui l'unica cosa che conta è la <strong>vittoria</strong> contro i tuoi avversari. Questa modalità è pensata per i tornei a <strong>8 giocatori</strong> e richiede un tempo notevolmente minore rispetto allo Scenario.</p>
-    </div>
+      <div id="12" class="subtitle">1.2 TORNEO</div>
+      <p class="testo">Questa modalità è puramente tattica e competitiva, ed elimina tutti gli elementi di narrazione. Qui l'unica cosa che conta è la <strong>vittoria</strong> contro i tuoi avversari. Questa modalità è pensata per i tornei a <strong>8 giocatori</strong> e richiede un tempo notevolmente minore rispetto allo Scenario.</p>    </div>
     <div class="text-center dont">
-      <div class="subtitle">1.3 RANGO</div>
+      <div id="13" class="subtitle">1.3 RANGO</div>
       <p class="testo">Entrambe le modalità di gioco devono essere associate a un <strong>Rango (1, 2 o 3)</strong>. Questo determinerà in generale la forza e la complessità dei personaggi che possono essere creati e quindi l'esperienza di gioco più competitiva o meno.</p>
     </div>
     <div class="text-center dont">
-      <div class="subtitle">1.4 MATCH AMICHEVOLI</div>
+      <div id="14" class="subtitle">1.4 MATCH AMICHEVOLI</div>
       <p class="testo">Non contano come una modalità di gioco a sé, ma singoli match fra due Fighters sono un modo eccellente per imparare velocemente le regole e fiondarsi su uno <strong>Scenario</strong> o <strong>Torneo</strong>. 
         <br><em class='text-sky-300'>Sono molto utili per capire se il personaggio che stiamo giocando è divertente da giocare, senza dover per forza giocarlo per tutto lo Scenario/Torneo</em></p>
     </div>
@@ -89,7 +88,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 2:</div>
+      <div id="2" class="section-number">Sezione 2:</div>
       <div class="section-title">MATCH</div>
     </div>
   </div>
@@ -99,20 +98,20 @@
     <br><em class='text-sky-300'>I Fighters normalmente iniziano il primo round del match senza Ego, ma alcune regole ed effetti possono cambiare questa situazione.</em></p>
   <div class="grid">
     <div class="text-center dont">
-      <div class="subtitle">2.1 SETUP PHASE</div>
+      <div id="21" class="subtitle">2.1 SETUP PHASE</div>
       <p class="testo">Durante questa fase, <strong>entrambi i Fighters</strong> scelgono segretamente il loro <strong>Setup</strong> per questo round. Il Setup è sempre rappresentato da <strong>due d6</strong>, uno che rappresenta la <strong>Velocità</strong> e l'altro che rappresenta il <strong>Comando</strong> che si vuole usare.<br>
       <em class='text-sky-300'>I dadi devono essere preferibilmente di colore diverso, in modo da essere chiari sulla rappresentazione delle due caratteristiche.</em></p>
     
     </div>
     <div class="text-center dont">
-      <div class="subtitle">2.2 EGO PHASE</div>
+      <div id="22" class="subtitle">2.2 EGO PHASE</div>
       <p class="testo">Durante questa fase, <strong>entrambi i Fighters</strong> rivelano contemporaneamente il loro <strong>Setup</strong> e subiscono <strong>Ego</strong> equivalente al <strong>Costo</strong> del loro <strong>Comando</strong>. Questo <strong>Ego</strong> viene subito anche se il <strong>Comando</strong> non può essere risolto (guarda prossima fase).<br>
         <em class='text-sky-300'>per esempio, se un Fighter rivela 5 per la Velocità e 4 per Comando, e il comando ha come costo "Setup + 1", il Fighter subirà in totale <strong>10 Ego</strong>.</em>
       </p>
     </div>
     
     <div class="text-center dont">
-      <div class="subtitle">2.3 RESOLUTION PHASE</div>
+      <div id="23" class="subtitle">2.3 RESOLUTION PHASE</div>
       <p class="testo">La combinazione dei due Comandi scelti dai due Fighters determinerà cosa succede:</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>Attacco + Attacco</strong>: solo <strong>Attacco</strong> con la <strong>Velocità più alta</strong> sarà risolto (✔Combo).<br>
@@ -129,10 +128,12 @@
     
     </div>
     <div class="text-center dont">
-      <div class="subtitle">2.4 END PHASE</div>
+      <div id="24" class="subtitle">2.4 END PHASE</div>
       <p class="testo">Il round finisce; ogni effetto che cita "alla fine del round" va applicato ora.
         Quando il <strong>sesto round termina</strong>, il match si conclude e il <strong>Fighter con il minor numero di Danni è il vincitore</strong>.<br>
-        <em class='text-sky-300'>Il match termina anche se il Fighter soffre abbastanza Danni da raggiungere il Danno limite: quel Fighter sarà KO!</em></p>
+        <em class='text-sky-300'>Il match termina anche se il Fighter soffre abbastanza Danni da raggiungere il Danno limite: quel Fighter sarà KO!</em><br>
+        <br><p class='testo'>Per i <strong>pareggi</strong> nei Tornei, decidete le regole prima dell'inizio del Torneo: potete decidere se dare la vittoria a chi ha <strong>meno Ego</strong> accumulato o continuare l'incontro usando <strong>solo Attacco</strong> (senza considerare più il costo) e dando la vittoria a chi ha usato il <strong>Comando più basso</strong>!</em></p>
+      </p>
     </div>
   </div>
 
@@ -140,7 +141,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 3:</div>
+      <div id="3" class="section-number">Sezione 3:</div>
       <div class="section-title">CONCETTI CHIAVE</div>
     </div>
   </div>
@@ -149,61 +150,61 @@
     
     <div class="grid">
       <div class="text-center dont">
-        <div class="subtitle">3.1 COMBO</div>
+        <div id="31" class="subtitle">3.1 COMBO</div>
         <p class="testo">Dopo aver risolto un <strong>Comando</strong> che ha un qualsiasi <strong>Comando Attacco</strong> nella sezione "<strong>Combo</strong>", puoi immediatamente risolvere uno di questi <strong>Comandi Attacco</strong> scegliendo di soffrire <strong>Ego</strong> equivalente al suo <strong>Costo</strong>.
           Puoi mantenere la <strong>Combo</strong> risolvendo i Comandi fino a un <strong>massimo di 3 Comandi risolti</strong> nel solito round.</p>  
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.2 COMANDO</div>
+        <div id="32" class="subtitle">3.2 COMANDO</div>
         <p class="testo">
           I <strong>Comandi</strong> sono le azioni che il nostro Fighter può effettuare durante il match. Ogni Comando è associato a un numero <strong>(da 1 a 6)</strong>, rappresentato dal <strong>Dado Comando</strong>.</p>
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.3 DADO COMANDO</div>
+        <div id="33" class="subtitle">3.3 DADO COMANDO</div>
         <p class="testo">Questo <strong>d6</strong> viene usato durante il <strong>Setup</strong> per pianificare segretamente quale <strong>Comando</strong> il nostro Fighter effettuerà.</p>
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.4 COSTO</div>
+        <div id="34" class="subtitle">3.4 COSTO</div>
         <p class="testo">I Comandi hanno sempre un costo, rappresentato da un numero, da "Setup", o da "Setup +/- un certo valore". <strong>Setup</strong> è il totale del <strong>Dado Velocità</strong> e <strong>Dado Comando</strong>, tirati dal Fighter durante l'inizio del round in corso. 
           Il costo dei Comandi fa guadagnare <strong>Ego</strong> al Fighter durante l'Ego Phase.</p>
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.5 DANNO</div>
+        <div id="35" class="subtitle">3.5 DANNO</div>
         <p class="testo">
           Il <strong>Danno</strong> è la principale via per vincere i match. Ogni volta che una risorsa reca Danno a un Fighter, il Giocatore corrispondente deve prendere nota di quanto Danno ha subito. Normalmente, un match si inizia con 0 Danni.</p>
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.6 DANNO LIMITE</div>
+        <div id="36" class="subtitle">3.6 DANNO LIMITE</div>
         <p class="testo">Questo numero rappresenta la tolleranza al <strong>Danno</strong> per ciascun Fighter. Se un Fighter accumula <strong>Danno uguale o maggiore del loro Danno Limite</strong>, il Fighter è <strong>KO</strong> e l'avversario vince immediatamente il match.</p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.7 EXTRA</div>
+          <div id="37" class="subtitle">3.7 EXTRA</div>
           <p class="testo">Alcuni effetti in gioco fan sì che i Fighters infliggano "<strong>Danni extra</strong>", subiscano o recuperino "<strong>Ego extra</strong>" e così via. "Extra" significa che la quantità originale (<strong>se presente!</strong>) viene aumentata; il totale dei danni è <strong>considerato una singola fonte di danni</strong>, non due, mi raccomando!</p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.8 SETUP</div>
+          <div id="38" class="subtitle">3.8 SETUP</div>
           <p class="testo">Questo valore è il totale del <strong>Dado Velocità</strong> e <strong>Dado Comando</strong>, tirati dal Fighter durante l'inizio del round in corso. Questo significa che il suo valore sarà sempre compreso fra <strong>2 e 12</strong>.</p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.9 OVERBALDRIVE</div>
+          <div id="39"  class="subtitle">3.9 OVERBALDRIVE</div>
           <p class="testo">L'<strong>OverBaldrive</strong> è una tecnica segreta che può ribaltare le sorti di un match. I Fighters hanno un numero variabile di OverBaldrive a seconda dello Scenario o del Torneo, e ogni OverBaldrive rimane <strong>nascosto fino al suo primo utilizzo</strong>.</p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.10 EGO</div>
+          <div id="310" class="subtitle">3.10 EGO</div>
           <p class="testo">L'<strong>Ego</strong> rappresenta lo stress e la sanità del nostro Fighter. Normalmente i Fighters subiscono Ego eseguendo <strong>Comandi Attacco</strong> e lo riducono usando <strong>Scatti</strong>; tuttavia, può anche essere subito o recuperato a causa di altri effetti.<br>
           <em class='text-sky-300'>I Fighters si caricano di Ego quando combattono, ma devono riuscire a controllarlo per non perdere la testa!</em></p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.11 EGO LIMITE</div>
+          <div id="311" class="subtitle">3.11 EGO LIMITE</div>
           <p class="testo">Questo numero rappresenta la tolleranza all'<strong>Ego</strong> per ciascun Fighter. Quando un Fighter subisce Ego, se l'<strong>Ego accumulato è uguale o superiore all'Ego Limite</strong>, subirà l'equivalente in Danni.<br>
             <em class='text-sky-300'>Per esempio, se un Fighter con un Ego Limite pari a 20 è a 19 e subisce una pressione di 10, raggiungerà semplicemente l'Ego di 29; ma se in seguito subisce altro Ego, questo verrà convertito in Danno. D'altra parte, se quel combattente riesce a ridurre il suo Ego a 19 o meno, può di nuovo tornare a subire Ego senza convertirlo in Danno. È tutta una questione di gestione del rischio!</em></p>
       </div>
       <div class="text-center dont">
-        <div class="subtitle">3.12 RISOLVERE</div>
+        <div id="312" class="subtitle">3.12 RISOLVERE</div>
         <p class="testo">Quando un <strong>Comando</strong> si risolve, tutti i suoi effetti hanno luogo nell'ordine indicato dal Comando stesso.</p>
       </div>
       <div class="text-center dont">
-          <div class="subtitle">3.13 DADO VELOCITÀ</div>
+          <div id="313" class="subtitle">3.13 DADO VELOCITÀ</div>
           <p class="testo">Questo <strong>d6</strong> viene usato durante il <strong>Setup</strong> per pianificare segretamente la velocità del <strong>Comando</strong> che il nostro Fighter effettuerà. La velocità entra in gioco soprattutto quando entrambi i Fighters scelgono di <strong>attaccare</strong> durante un round, ma influisce anche sui <strong>Comandi Blocco</strong> e <strong>Scatto</strong> per effettuare <strong>Combo</strong>.</p>
       </div>
     </div>
@@ -211,7 +212,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 4:</div>
+      <div id="4" class="section-number">Sezione 4:</div>
       <div class="section-title">CREAZIONE</div>
     </div>
   </div>
@@ -220,16 +221,16 @@
 
   <div class="grid">
     <div class="text-center dont">
-      <div class="subtitle">4.1 DESIGN</div>
+      <div id="41" class="subtitle">4.1 DESIGN</div>
       <p class="testo">Puoi creare qualsiasi Fighter tu voglia: apparenza, nome, vestiario, universo, non c'è limite in Lupus in Baldum Multiverse!</p>  
     </div>
     <div class="text-center dont">
-      <div class="subtitle">4.2 SCEGLI UNO STYLE</div>
+      <div id="42" class="subtitle">4.2 SCEGLI UNO STYLE</div>
       <p class="testo">Scegli uno degli <strong>Styles</strong> per il tuo Fighter (li troverai più avanti). Lo <strong>Style</strong> determina le opzioni di Comando del tuo Fighter e influenza la scelta del tuo <strong>OverBaldrive</strong>. Il tuo Style e i tuoi Comandi sono <strong>pubblici</strong> durante il gioco (al contrario dei tuoi OverBaldrives).<br>
       <em class="text-sky-300">Il nome di ogni Comando è solo indicativo: assicuratevi di rinominarli in modo che si adattino meglio al vostro personaggio (senza modificare regole o effetti).</em></p>
     </div>
     <div class="text-center dont">
-      <div class="subtitle">4.3 SCEGLI GLI OVERBALDRIVES</div>
+      <div id="43" class="subtitle">4.3 SCEGLI GLI OVERBALDRIVES</div>
       <p class="testo">Scegli un numero di OverBaldrives in base al Rango Baldo scelto per lo Scenario o il Torneo.</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
           <li><strong>Rango 1</strong>: scegli <strong>1 OverBaldrive</strong> dalla lista <strong>Style</strong> del tuo Fighter</li>
@@ -241,7 +242,7 @@
       <em class="text-sky-300">Come i Comandi, anche gli OverBaldrives possono essere rinominati per adattarsi meglio al personaggio.</em></p>
     </div>
     <div class="text-center dont">
-      <div class="subtitle">4.4 ANNOTARE I LIMITI</div>
+      <div id="44" class="subtitle">4.4 ANNOTARE I LIMITI</div>
       <p class="testo">Registra il Danno Limite ed Ego Limite del tuo Fighter:</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
           <li><strong>Danno Limite</strong>: questo valore è fornito dal tuo <strong>Style</strong>, ma può essere modificato dagli <strong>OverBaldrives</strong>.</li>
@@ -254,7 +255,7 @@
 
   <div class="sezionegioco" id="styles">
     <div class="sezionecont text-center text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="bp" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">MAGICIAN</div>
       <div class="section-title">(Bait & Punish)</div>
     </div>
@@ -424,7 +425,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="h" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">BERSERK</div>
       <div class="section-title">(Heavy)</div>
     </div>
@@ -594,7 +595,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="hr" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">RANGER</div>
       <div class="section-title">(Hit & Run)</div>
     </div>
@@ -763,7 +764,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="m" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">SHAPESHIFTER</div>
       <div class="section-title">(Mixup)</div>
     </div>
@@ -933,7 +934,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="z" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">TACTICIAN</div>
       <div class="section-title">(Zoner)</div>
     </div>
@@ -1102,7 +1103,7 @@
 
   <div class="sezionegioco">
     <div class="sezionecont text-center">
-      <div class="section-number">FIGHTER STYLE:</div>
+      <div id="r" class="section-number">FIGHTER STYLE:</div>
       <div class="section-title">ASSASSIN</div>
       <div class="section-title">(Rushdown)</div>
     </div>
@@ -1272,7 +1273,7 @@
 
   <div class="sezionegioco" id="overdrive">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 5:</div>
+      <div id="5" class="section-number">Sezione 5:</div>
       <div class="section-title">OVERBALDRIVES</div>
     </div>
   </div>
@@ -1281,19 +1282,19 @@
 
   <div class="grid">
     <div class="text-center dont">
-      <div class="subtitle">5.1 SCEGLIERE OVERBALDRIVES</div>
+      <div id="51" class="subtitle">5.1 SCEGLIERE OVERBALDRIVES</div>
       <p class="testo">Quando si scelgono gli OverBaldrive per un Fighter, bisogna farlo seguendo le regole dello Scenario o del Torneo a cui si partecipa.<br>
         <em class='text-sky-300'>Si noti che si è liberi di ricostruire parzialmente o interamente il proprio Fighter tra gli Scenari e i Tornei: approfittatene e sperimentate diverse configurazioni di Stile e di OverBaldrive, per trovare la vostra combinazione preferita!</em></p>  
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">5.2 RIVELARE OVERBALDRIVES</div>
+      <div id="52" class="subtitle">5.2 RIVELARE OVERBALDRIVES</div>
       <p class="testo">Gli OverBaldrives non hanno effetto fino a quando non vengono rivelati: prima di allora, è come se il Fighter non li avesse affatto. Per usare un OverBaldrive, semplicemente <strong>rivelalo quando inneschi il suo requisito</strong>. Rivelare un OverBaldrive <strong>è sempre opzionale</strong>, a meno che non sia indicato nel testo. Quando un OverBaldrive è stato rivelato, il suo <strong>Effetto</strong> sarà valido per il resto dello Scenario/Torneo e devi <strong>informare</strong> il tuo avversario di ciò.<br>
-      <em class="text-sky-300">A volte è più saggio scegliere la via più difficile e tentare di vincere una partita senza utilizzare un'OverBaldrive, in modo tale da nasconderlo fino a quando non se ne ha veramente bisogno.</em></p>
+      <em class="text-sky-300">A volte è più saggio scegliere la via più difficile e tentare di vincere una partita senza utilizzare un OverBaldrive, in modo tale da nasconderlo fino a quando non se ne ha veramente bisogno.</em></p>
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">5.3 OVERBALDRIVES <span style="color: red;">UNIVERSALI</span></div>
+      <div id="53" class="subtitle">5.3 OVERBALDRIVES <span style="color: red;">UNIVERSALI</span></div>
 
       <div class="columns">
         <div class="text-center dont">
@@ -1344,7 +1345,7 @@
     </div>
 
     <div class="text-center">
-      <div class="subtitle">5.4 OVERBALDRIVES <span style="color: red;">MAGICIAN</span></div>
+      <div id="54" class="subtitle">5.4 OVERBALDRIVES <span style="color: red;">MAGICIAN</span></div>
 
       <div class="columns">
         <div class="text-center dont">
@@ -1373,7 +1374,7 @@
     </div>
 
     <div class="text-center">
-      <div class="subtitle">5.5 OVERBALDRIVES <span style="color: red;">BERSERK</span></div>
+      <div id="55" class="subtitle">5.5 OVERBALDRIVES <span style="color: red;">BERSERK</span></div>
 
       <div class="columns">
         <div class="text-center dont">
@@ -1402,7 +1403,7 @@
     </div>
 
     <div class="text-center">
-      <div class="subtitle">5.6 OVERBALDRIVES <span style="color: red;">RANGER</span></div>
+      <div id="56" class="subtitle">5.6 OVERBALDRIVES <span style="color: red;">RANGER</span></div>
 
       <div class="columns">
         <div class="text-center dont">
@@ -1431,7 +1432,7 @@
     </div>
 
     <div class="text-center">
-      <div class="subtitle">5.7 OVERBALDRIVES <span style="color: red;">TACTICIAN</span></div>
+      <div id="57" class="subtitle">5.7 OVERBALDRIVES <span style="color: red;">TACTICIAN</span></div>
 
       <div class="columns">
         <div class="text-center dont">
@@ -1495,7 +1496,7 @@
 
   <div class="sezionegioco" id="overdrive">
     <div class="sezionecont text-center">
-      <div class="section-number">Sezione 6:</div>
+      <div id="6" class="section-number">Sezione 6:</div>
       <div class="section-title">SCENARIO</div>
     </div>
   </div>
@@ -1503,7 +1504,7 @@
  <div class="grid">
     
     <div class="text-center dont">
-      <div class="subtitle">6.1 PREPARAZIONE</div>
+      <div id="61" class="subtitle">6.1 PREPARAZIONE</div>
       <p class="testo">Radunate <strong>3-6 giocatori</strong>. Ogni Giocatore deve approvare il <strong>tono</strong>, lo <strong>stile</strong> e le <strong>premesse</strong> dello Scenario.</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>Regole</strong>: Scegliete il <strong>Rango</strong> con cui giocare <strong>(1, 2 o 3)</strong>; discutete di eventuali house rules o cambiamenti di regole in generale.</li>
@@ -1513,7 +1514,7 @@
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.2 SETUP</div>
+      <div id="62" class="subtitle">6.2 SETUP</div>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>Carte Tema</strong>: Ogni Giocatore riceve una <strong>Carta Tema</strong> unica per il proprio Fighter; potete sceglierle o distribuirle a caso, ma due Fighter non possono avere la stessa Carta. I giocatori
           possono sempre rifiutare una Carta Tema e sceglierne una diversa.</li>
@@ -1522,7 +1523,7 @@
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.3 NARRAZIONE</div>
+      <div id="63" class="subtitle">6.3 NARRAZIONE</div>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>Tutti i giocatori</strong>: Ogni Giocatore ha <strong>sempre</strong> l'autorità di narrazione sul suo Fighter (cosa fa, come reagisce, cosa dice, etc.), e possono rifiutare o modificare quello che aggiunge il <strong>Gruppo</strong> se coinvolge il proprio Figher.</li>
         <li><strong>Giocatore Attivo</strong>: Il Giocatore che sta giocando nel proprio turno ha l'autorità di narrare su tutto e tutti nella scena, a eccezione dei Fighter altrui, e può sempre rifiutare o modificare quello che aggiunge il <strong>Gruppo</strong>.</li>
@@ -1534,7 +1535,7 @@
     <div class="pagebreak"> </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.4 STAGE I - <span style="color: red;">ENTRATA</span></div>
+      <div id="64" class="subtitle">6.4 STAGE I - <span style="color: red;">ENTRATA</span></div>
       <p class="testo">A partire dal Giocatore la cui <strong>Carta Tema</strong> ha la <strong>priorità più alta</strong>, e procedendo in senso <strong>orario</strong>, ogni Giocatore narra una
         scena per introdurre il proprio Fighter e intreccia la propria Carta Tema nelle premesse dello Scenario.</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
@@ -1546,7 +1547,7 @@
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.5 STAGE II - <span style="color: red;">SFIDA</span></div>
+      <div id="65" class="subtitle">6.5 STAGE II - <span style="color: red;">SFIDA</span></div>
       <p class="testo">A partire dal Giocatore la cui <strong>Carta Tema</strong> ha la <strong>priorità più bassa</strong>, e procedendo in senso <strong>orario</strong>, ogni Giocatore narra una
         scena dove il proprio Fighter sfida il Fighter del Giocatore alla sua <strong>sinistra</strong> in un <strong>Match</strong>.</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
@@ -1560,7 +1561,7 @@
     <div class="pagebreak"> </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.6 STAGE III - <span style="color: red;">SHOWDOWN</span></div>
+      <div id="66" class="subtitle">6.6 STAGE III - <span style="color: red;">SHOWDOWN</span></div>
       <p class="testo">È il momento del duello finale: uno dei Fighter sarà consumato dall'oscurità e un altro sorgerà per affrontarlo. Ogni Giocatore calcola il <strong>Progresso totale</strong> del proprio Fighter (pari al Progresso ottenuto durante il secondo Stage - Sfida). Ogni Giocatore calcola il <strong>totale Legame</strong> del proprio Fighter (pari alla somma dei punteggi Legame di tutti gli altri nei confronti del proprio Fighter; questo può essere negativo, ovviamente).</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>L'Eminenza grigia</strong>: Il Fighter con il <strong>totale Legami più basso</strong> diventa <strong>l'Eminenza grigia</strong> e si trasforma in un villain. In caso di parità, vince il <strong>Progresso più alto</strong>; se ancora c'è ancora parità, vince la <strong>Priorità più alta</strong>. Durante questo Stage, l'Eminenza grigia aumenta il proprio <strong>Danno Limite</strong> di un'ammontare pari al proprio Progresso totale.</li>
@@ -1573,7 +1574,7 @@
     </div>
 
     <div class="text-center dont">
-      <div class="subtitle">6.7 STAGE IV - <span style="color: red;">EPILOGO</span></div>
+      <div id="67" class="subtitle">6.7 STAGE IV - <span style="color: red;">EPILOGO</span></div>
       <p class="testo">Insieme, la Speranza e l'Eminenza grigia narrano la conclusione del loro combattimento; poi, ogni altro Giocatore narra una breve scena incentrata sul proprio Fighter, in ordine di <strong>Priorità crescente</strong>.</p>
       <ul class="list-disc mx-auto w-3/4 text-left testo">
         <li><strong>Obiettivi</strong>: Mostrate come ogni Fighter affronta le conseguenze dello scenario e l'esito dello Showdown.</li>
@@ -1588,7 +1589,7 @@
 
   <div class="sezionegioco no-print" id="play">
     <div class="sezionecont text-center">
-      <div class="section-number">FAST RECAP</div>
+      <div id="7" class="section-number">FAST RECAP</div>
       <div class="section-title">All Fighters!</div>
     </div>
   </div>
@@ -1693,7 +1694,7 @@
           
           <button class="btn btn-lg rounded-none" onclick="popup5h()">
             <i class="bi bi-dice-5 text-4xl"></i>
-            <p class="text-xs"><🏃‍♂️ →	✨</p>
+            <p class="text-xs">=🏃‍♂️ →	✨</p>
           </button>
         
           <button class="btn btn-lg rounded-none" onclick="popup6h()">
@@ -1988,6 +1989,12 @@
             </label>
           </button>
   </div>
+
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="overlayimg">
+      <img src="./img/sfondo.png" alt="">
+    </div>
+  </div>
         
   <footer class="footer footer-center bg-base-300 text-base-content p-4">
       <aside>
@@ -2002,86 +2009,86 @@
   <ul class="menu bg-base-200 text-base-content min-h-full w-60 p-2">
     <!-- Sidebar content here -->
     <li>
-      <a><strong>1. Modalità di Gioco</strong></a>
+      <a href="#1"><strong>1. Modalità di Gioco</strong></a>
       <ul>
-        <li><a>1.1 Scenario</a></li>
-        <li><a>1.2 Torneo</a></li>
-        <li><a>1.3 Rango</a></li>
-        <li><a>1.4 Match amichevoli</a></li>
+        <li><a href="#11">1.1 Scenario</a></li>
+        <li><a href="#12">1.2 Torneo</a></li>
+        <li><a href="#13">1.3 Rango</a></li>
+        <li><a href="#14">1.4 Match amichevoli</a></li>
       </ul>
     </li>
     <li>
-      <a><strong>2. Match</strong></a>
+      <a href="#2"><strong>2. Match</strong></a>
       <ul>
-        <li><a>2.1 Setup Phase</a></li>
-        <li><a>2.2 Ego Phase</a></li>
-        <li><a>2.3 Resolution Phase</a></li>
-        <li><a>2.4 End Phase</a></li>
+        <li><a href="#21">2.1 Setup Phase</a></li>
+        <li><a href="#22">2.2 Ego Phase</a></li>
+        <li><a href="#23">2.3 Resolution Phase</a></li>
+        <li><a href="#24">2.4 End Phase</a></li>
       </ul>
     </li>
     <li>
-      <a><strong>3. Concetti Chiave</strong></a>
+      <a href="#3"><strong>3. Concetti Chiave</strong></a>
       <ul>
-        <li><a>3.1 Combo</a></li>
-        <li><a>3.2 Comando</a></li>
-        <li><a>3.3 Dado Comando</a></li>
-        <li><a>3.4 Costo</a></li>
-        <li><a>3.5 Danno</a></li>
-        <li><a>3.6 Danno Limite</a></li>
-        <li><a>3.7 Extra</a></li>
-        <li><a>3.8 Setup</a></li>
-        <li><a>3.9 OverBaldrive</a></li>
-        <li><a>3.10 Ego</a></li>
-        <li><a>3.11 Ego Limite</a></li>
-        <li><a>3.12 Risolvere</a></li>
-        <li><a>3.13 Dado Velocità</a></li>
+        <li><a href="#31">3.1 Combo</a></li>
+        <li><a href="#32">3.2 Comando</a></li>
+        <li><a href="#33">3.3 Dado Comando</a></li>
+        <li><a href="#34">3.4 Costo</a></li>
+        <li><a href="#35">3.5 Danno</a></li>
+        <li><a href="#36">3.6 Danno Limite</a></li>
+        <li><a href="#37">3.7 Extra</a></li>
+        <li><a href="#38">3.8 Setup</a></li>
+        <li><a href="#39">3.9 OverBaldrive</a></li>
+        <li><a href="#310">3.10 Ego</a></li>
+        <li><a href="#311">3.11 Ego Limite</a></li>
+        <li><a href="#312">3.12 Risolvere</a></li>
+        <li><a href="#313">3.13 Dado Velocità</a></li>
       </ul>
     </li>
     <li>
-      <a><strong>4. Creazione</strong></a>
+      <a href="#4"><strong>4. Creazione</strong></a>
       <ul>
-        <li><a>4.1 Design</a></li>
-        <li><a>4.2 Scegli uno Style</a></li>
-        <li><a>4.3 Scegli gli OverBaldrives</a></li>
-        <li><a>4.4 Annotare i Limiti</a></li>
-        <li><a>4.5 Fighter Style</a></li>
+        <li><a href="#41">4.1 Design</a></li>
+        <li><a href="#42">4.2 Scegli uno Style</a></li>
+        <li><a href="#43">4.3 Scegli gli OverBaldrives</a></li>
+        <li><a href="#44">4.4 Annotare i Limiti</a></li>
+        <li><a href="#45">4.5 Fighter Style</a></li>
         <ul>
-        <li><a>Bait&Punish</a></li>
-        <li><a>Heavy</a></li>
-        <li><a>Hit&Run</a></li>
-        <li><a>Mixup</a></li>
-        <li><a>Zoner</a></li>
-        <li><a>Rushdown</a></li>
+        <li><a href="#bp">Bait&Punish</a></li>
+        <li><a href="#h">Heavy</a></li>
+        <li><a href="#hr">Hit&Run</a></li>
+        <li><a href="#m">Mixup</a></li>
+        <li><a href="#z">Zoner</a></li>
+        <li><a href="#r">Rushdown</a></li>
         </ul>
       </ul>
     </li>
     <li>
-      <a><strong>5. OverBaldrives</strong></a>
+      <a href="#5"><strong>5. OverBaldrives</strong></a>
       <ul>
-        <li><a>5.1 Scegliere OverBaldrives</a></li>
-        <li><a>5.2 Rivelare OverBaldrives</a></li>
-        <li><a>5.3 OverBaldrives Universali</a></li>
-        <li><a>5.4 OverBaldrives Bait&Punish</a></li>
-        <li><a>5.5 OverBaldrives Heavy</a></li>
-        <li><a>5.6 OverBaldrives Hit&Run</a></li>
-        <li><a>5.7 OverBaldrives Zoner</a></li>
-        <li><a>5.8 OverBaldrives Rushdown</a></li>
+        <li><a href="#51">5.1 Scegliere OverBaldrives</a></li>
+        <li><a href="#52">5.2 Rivelare OverBaldrives</a></li>
+        <li><a href="#53">5.3 OverBaldrives Universali</a></li>
+        <li><a href="#54">5.4 OverBaldrives Bait&Punish</a></li>
+        <li><a href="#55">5.5 OverBaldrives Heavy</a></li>
+        <li><a href="#56">5.6 OverBaldrives Hit&Run</a></li>
+        <li><a href="#57">5.7 OverBaldrives Zoner</a></li>
+        <li><a href="#58">5.8 OverBaldrives Rushdown</a></li>
       </ul>
     </li>
     <li>
-      <a><strong>6. Scenario</strong></a>
+      <a href="#6"><strong>6. Scenario</strong></a>
       <ul>
-        <li><a>5.1 Preparazione</a></li>
-        <li><a>5.2 Setup</a></li>
-        <li><a>5.3 Narrazione</a></li>
-        <li><a>5.4 Stage I - Entrata</a></li>
-        <li><a>5.5 Stage II - Sfida</a></li>
-        <li><a>5.6 Stage III - Showdown</a></li>
-        <li><a>5.7 Stage IV - Epilogo</a></li>
+        <li><a href="#61">6.1 Preparazione</a></li>
+        <li><a href="#62">6.2 Setup</a></li>
+        <li><a href="#63">6.3 Narrazione</a></li>
+        <li><a href="#64">6.4 Stage I - Entrata</a></li>
+        <li><a href="#65">6.5 Stage II - Sfida</a></li>
+        <li><a href="#66">6.6 Stage III - Showdown</a></li>
+        <li><a href="#67">6.7 Stage IV - Epilogo</a></li>
       </ul>
     </li>
     <li>
-      <a><strong>7. ✨ PLAY NOW! ✨</strong></a>
+      <a href="#7"><strong>7. ✨ PLAY NOW! ✨</strong></a>
     </li>
     
   </ul>
