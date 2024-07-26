@@ -77,7 +77,7 @@ function popup1h(){
 
 function popup2h(){
     Swal.fire({
-        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-2"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>DECIMATE!</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup +1</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo:&nbsp;</span><i class="bi bi-dice-1"></i>&nbsp;<i class="bi bi-dice-3"></i></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, subisce <strong>2 Ego</strong>.</p></div></div>',
+        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-2"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>DECIMATE!</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup +1</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo:&nbsp;</span><i class="bi bi-dice-1"></i>&nbsp;<i class="bi bi-dice-3"></i></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>4 Danni</strong> al tuo avversario; <strong>poi</strong>, il tuo avversario subisce <strong>2 Ego</strong>.</p></div></div>',
         showCloseButton: true,
         showConfirmButton: false,
         customClass: {
@@ -166,7 +166,7 @@ function popup3hr(){
 
 function popup4hr(){
     Swal.fire({
-        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-4"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>TWIN DRAGONS</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo: </span></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>7 Danni</strong> al tuo avversario; <strong>poi</strong>, infliggi <strong>9 Danni</strong> all&#39avversario se il suo <strong>Ego</strong> è <strong>più alto</strong> del tuo.</p></div></div>',
+        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-4"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>TWIN DRAGONS</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo: </span></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>7 Danni</strong> al tuo avversario; se il suo <strong>Ego</strong> è <strong>più alto</strong> del tuo, infliggi invece <strong>9 Danni</strong>.</p></div></div>',
         showCloseButton: true,
         showConfirmButton: false,
         customClass: {
@@ -268,7 +268,7 @@ function popup6mix(){
 
 function popup1zoner(){
     Swal.fire({
-        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-1"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>SHADOW PAWN</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo:&nbsp</span><i class="bi bi-dice-1"></i>&nbsp<i class="bi bi-dice-2"></i></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>2 Danni</strong> al tuo avversario.; <strong>poi</strong>, l&#39avversario subisce <strong>2 Ego</strong>.</p></div></div>',
+        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-1"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>SHADOW PAWN</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo:&nbsp</span><i class="bi bi-dice-1"></i>&nbsp<i class="bi bi-dice-2"></i></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>2 Danni</strong> al tuo avversario; <strong>poi</strong>, il tuo avversario subisce <strong>2 Ego</strong>.</p></div></div>',
         showCloseButton: true,
         showConfirmButton: false,
         customClass: {
@@ -369,7 +369,7 @@ function popup3rush(){
 
 function popup4rush(){
     Swal.fire({
-        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-4"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>STARBUST STREAM</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo: </span></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>8 Danni</strong> al tuo avversario; se il tuo avversario rivela un <strong>Comando Scatto</strong> durante questo round, infliggi invece <strong>10 Danni</strong> al tuo avversario.</p></div></div>',
+        html: '<div class="boxcard"><div class="flex items-center justify-center"><div class="w-14 h-14 text-4xl"><i class="bi bi-dice-4"></i></div><div class="ml-4"><h2 class="subtitle text-left"><em>STARBUST STREAM</em></h2><div class="flex items-center mt-2"><span class="font-semibold">Costo:</span><span class="text-red-500 ml-1 semibold">Setup</span></div><div class="flex items-center mt-1"><span class="font-semibold">Combo: </span></div></div></div><div class="mt-4 items-center justify-center"><p><strong>Effetto:</strong></p><p>Infliggi <strong>8 Danni</strong> al tuo avversario; se il tuo avversario rivela un <strong>Comando Scatto</strong> durante questo round, infliggi invece <strong>10 Danni</strong>.</p></div></div>',
         showCloseButton: true,
         showConfirmButton: false,
         customClass: {
