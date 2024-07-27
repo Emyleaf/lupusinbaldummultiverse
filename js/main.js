@@ -1,3 +1,13 @@
+function show() {
+  document.getElementById("intro").style.display="block";
+  setTimeout("hide()", 3000); // 5 wait, change the delay here
+}
+
+function hide() {
+  document.getElementById("intro").style.display="none";
+  document.getElementById("content").style.display="block";
+}
+
 const scrollToTopButton = document.getElementById('scrollToTopButton');
 
 // Aggiungi l'evento click al pulsante per scorrere verso l'alto

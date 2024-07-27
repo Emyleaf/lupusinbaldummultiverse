@@ -137,3 +137,79 @@ body {
      }
 
 }
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.card.flipped {
+    transform: rotateY(360deg);
+}
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+#intro{
+    background-color: #000;
+}
+
+#intro {
+    animation: fadeInAnimation ease 3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.zoomed{
+    animation: zoomIn ease 2s;
+}
+
+@keyframes zoomIn {
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altezza minima dello schermo */
+}
+
+#introimg {
+    max-width: 100%;
+    height: auto;
+}

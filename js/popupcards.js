@@ -399,3 +399,75 @@ function popup6rush(){
         },
     });
 }
+
+function popup1tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">RIPRENDI I TUOI RICORDI</div><div class="content"><p class="text-sm"><em>Non riesci a ricordare chi sei o per cosa hai lottato finora, ma il tuo corpo sa benissimo come si fa.</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... ricordi che ti ha ferito. Quando lo affronti:</p><p class="text-sm green"><strong>Vittoria</strong>: devono spiegarti cosa è successo.</p><p class="text-sm red"><strong>Pareggio o Sconfitta</strong>: possono spiegarti cosa è successo.</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Chi ha bisogno di ricordi, dopotutto? Essere vuoto… è così liberatorio.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function popup2tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">LEGGE E GIUSTIZIA</div><div class="content"><p class="text-sm"><em>Hai messo la tua forza al servizio della legge; in questo momento, stai cercando un pericoloso criminale ricercato.</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... ricordi che una volta ti è sfuggito. Quando lo affronti:</p><p class="text-sm green"><strong>Vittoria</strong>: devono rivelarti la posizione del criminale.</p><p class="text-sm red"><strong>Pareggio o Sconfitta</strong>: possono rivelarti la posizione del criminale.</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Forse la legge è insufficiente. La giustizia richiede... misure drastiche.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function popup3tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">RIPRISTINA LA TUA REPUTAZIONE</div><div class="content"><p class="text-sm"><em>Tutti rispettavano il tuo stile di combattimento, e il tuo maestro era una figura potente. Ma poi il tuo maestro è stato sconfitto e la tua scuola è caduta in disgrazia. Ma tu non ti sei arreso.</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... è la persona che ha sconfitto il tuo maestro in combattimento. Sconfiggili a tua volta, e la reputazione della tua scuola sarà ripristinata!</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Tornare a come erano le cose prima? Non è così che funziona questo mondo. Il tuo stile non deve mai essere deriso di nuovo... e l&#8217;unico modo per assicurarti che ciò accada è schiacciare tutti gli altri.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function popup4tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">DIMOSTRA IL TUO VALORE</div><div class="content"><p class="text-sm"><em>Il mondo è un posto spietato, e devi dimostrare la tua forza. C&#8217;è qualcuno che non devi deludere!</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... sembra avere un potenziale straordinario, e sarà sicuramente un avversario degno. Cosa ti ha colpito?</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Non è abbastanza. Devi distruggere completamente qualcuno, così nessuno dimenticherà mai quanto sei forte. Forse in questo modo guadagnerai il rispetto di quella persona... o meglio ancora, la loro paura.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function popup5tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">TROVA LA RELIQUIA</div><div class="content"><p class="text-sm"><em>Stai cercando un cimelio, un oggetto prezioso che concede un potere speciale. La cerchi per te stesso, o per il bene di qualcun altro?</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... è l&#8217;attuale possessore della reliquia. Quando lo affronti:</p><p class="text-sm green"><strong>Vittoria</strong>: devono darti la reliquia.</p><p class="text-sm red"><strong>Pareggio o Sconfitta</strong>: possono darti la reliquia.</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Se hai ottenuto la reliquia, sei corrotto dal suo potere. Se non l&#8217;hai ottenuta, sei ora disposto a uccidere per essa.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function popup6tarot(){
+    Swal.fire({
+        html: '<div class="container"><div class="section-number text-md">VENDETTA</div><div class="content"><p class="text-sm"><em>Qualcuno a te caro è morto. Qualcuno dovrà pur pagare.</em></p><p><span class="subtitle">Il Fighter alla tua sinistra...</span></p><p class="text-sm">... era presente quando quella persona è morta. Quando lo affronti:</p><p class="text-sm green"><strong>Vittoria</strong>: devono dirti cosa è successo.</p><p class="text-sm red"><strong>Pareggio o Sconfitta</strong>: possono dirti cosa è successo.</p></div><div class="subtitlename">SHADOW ENDING</div><p class="text-md"><em>Senti la necessità di sfogare la tua rabbia su qualcuno, su chiunque. Se nessuno sarà in grado di fermarti, il mondo cadrà in rovina.</em></p></div>',
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
+function flipCard(cardContainer) {
+    const card = cardContainer.querySelector('.card');
+    card.classList.toggle('flipped');
+}
+

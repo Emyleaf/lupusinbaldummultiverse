@@ -26,10 +26,21 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
-<body>
+<body onload="show();" id="body">
 
-  
-  <div class="hero min-h-screen">
+<div id="intro" class="hero min-h-screen flex items-center justify-center">
+  <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+          <img id="introimg" src="./img/benvenuto.png" alt="Benvenuto" class="mx-auto">
+      </div>
+  </div>
+</div>
+
+
+
+  <div id="content" style="display: none;">
+
+  <div class="hero min-h-screen zoomed">
     <div class="hero-content text-neutrale-content text-center">
       <div class="max-w-md">
         <h2 class="text-5xl font-bold titlegiant">Lupus in Baldum</h2>
@@ -1598,6 +1609,59 @@
     </div>
   </div>
 
+  <div class="sezionegioco no-print">
+    <div class="sezionecont text-center">
+      <div id="8" class="section-number">Tarot</div>
+      <div class="section-title">I ruoli Scenario</div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+        <div class="card-container" onclick="flipCard(this); popup1tarot();">
+          <div class="card">
+              <div class="card-face card-front">
+                  <img src="./img/1.png" alt="Tarocco 2">
+              </div>
+          </div>
+        </div>
+        <div class="card-container" onclick="flipCard(this); popup2tarot();">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./img/2.png" alt="Tarocco 2">
+                </div>
+            </div>
+        </div>
+        <div class="card-container" onclick="flipCard(this); popup3tarot();">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./img/3.png" alt="Tarocco 3">
+                </div>
+            </div>
+        </div>
+        <div class="card-container" onclick="flipCard(this); popup4tarot();">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./img/4.png" alt="Tarocco 4">
+                </div>
+            </div>
+        </div>
+        <div class="card-container" onclick="flipCard(this); popup5tarot();">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./img/5.png" alt="Tarocco 5">
+                </div>
+            </div>
+        </div>
+        <div class="card-container" onclick="flipCard(this); popup6tarot();">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./img/6.png" alt="Tarocco 6">
+                </div>
+            </div>
+        </div>
+
+  </div>
+
   <div class="pagebreak"> </div>
 
   <div class="interactive">
@@ -2113,10 +2177,14 @@
       </ul>
     </li>
     <li>
-      <a href="#7"><strong>7. ✨ PLAY NOW! ✨</strong></a>
+      <a href="#7"><strong>7. Ruoli Scenario</strong></a>
+    </li>
+    <li>
+      <a href="#8"><strong>8. ✨ PLAY NOW! ✨</strong></a>
     </li>
     
   </ul>
+</div>
 </div>
 </div>
 
