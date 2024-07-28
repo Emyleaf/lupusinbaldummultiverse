@@ -8,6 +8,7 @@ function hide() {
   document.getElementById("content").style.display="block";
 }
 
+
 const scrollToTopButton = document.getElementById('scrollToTopButton');
 
 // Aggiungi l'evento click al pulsante per scorrere verso l'alto

@@ -167,7 +167,7 @@ body {
 }
 
 #intro {
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 3.5s;
 }
 
 @keyframes fadeInAnimation {
