@@ -1,5 +1,5 @@
 function show() {
-  document.getElementById("intro").style.display="block";
+  document.getElementById("intro").style.display="grid";
   setTimeout("hide()", 3000); // 5 wait, change the delay here
 }
 
